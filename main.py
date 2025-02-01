@@ -5,10 +5,10 @@ print(28*"=" + "\n")
 
 angka_1 = float(input("Masukkan angka pertama: "))
 angka_2 = float(input("Masukkan angka kedua: "))
-print(f"Penjumlahan: ", angka_1 + angka_2)
-print(f"Pengurangan: ", angka_1 - angka_2)
-print(f"Perkalian: ", angka_1 * angka_2)
-print(f"Pembagian: ", angka_1 / angka_2)
+print(f"Penjumlahan: {angka_1 + angka_2}")
+print(f"Pengurangan: {angka_1 - angka_2}")
+print(f"Perkalian: {angka_1 * angka_2}")
+print(f"Pembagian: {angka_1 / angka_2}")
 
 exit()
 
