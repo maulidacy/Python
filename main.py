@@ -1,3 +1,33 @@
+# Cek Angka Ganjil atau Genap
+print(35*"=")
+print("Cek Angka Ganjil atau Genap")
+print(35*"=" + "\n")
+
+angka = float(input("Masukkan sebuah angka: "))
+
+if angka % 2 == 0:
+    print("Angka tersebut adalah genap.")
+else:
+    print("Angka tersebut adalah ganjil.")
+exit()
+
+# Cek Bilangan Positif, Negatif, atau Nol
+print(40*"=")
+print("Cek Bilangan Positif, Negatif, atau Nol")
+print(40*"=" + "\n")
+
+angka = float(input("Masukkan sebuah angka: "))
+
+if angka > 0:
+    print("Angka tersebut adalah positif.")
+elif angka < 0:
+    print("Angka tersebut adalah negatif.")
+else:
+    print("Angka tersebut adalah nol.")
+
+exit()
+
+
 # Operasi Aritmatika Sederhana
 print(28*"=")
 print("Operasi Aritmatika Sederhana")
