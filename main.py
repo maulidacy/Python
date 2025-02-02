@@ -8,12 +8,12 @@ atas = int(input("Masukkan batas atas: "))
 
 for i in range(bawah, atas + 1):
     if i > 1:  # Bilangan prima harus lebih dari 1
-        is_prime = True  # Anggap bilangan adalah prima
+        prima = True  # Anggap bilangan adalah prima
         for j in range(2, int(i**0.5) + 1):  # Cek hingga akar dari i
             if (i % j) == 0:
-                is_prime = False  # Jika ada faktor, bukan prima
+                prima = False  # Jika ada faktor, bukan prima
                 break
-        if is_prime:
+        if prima:
             print(f"Bilangan prima: {i}")
 exit()
     
