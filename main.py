@@ -1,3 +1,64 @@
+# Menampilkan Bilangan Prima dalam Rentang Tertentu
+print(49*"=")
+print("Menampilkan Bilangan Prima dalam Rentang Tertentu")
+print(49*"=" + "\n")
+
+bawah = int(input("Masukkan batas bawah: "))
+atas = int(input("Masukkan batas atas: "))
+
+for i in range(bawah, atas + 1):
+    if i > 1:  # Bilangan prima harus lebih dari 1
+        is_prime = True  # Anggap bilangan adalah prima
+        for j in range(2, int(i**0.5) + 1):  # Cek hingga akar dari i
+            if (i % j) == 0:
+                is_prime = False  # Jika ada faktor, bukan prima
+                break
+        if is_prime:
+            print(f"Bilangan prima: {i}")
+exit()
+    
+# Cek Login dengan Dictionary
+print(28*"=")
+print("Cek Login dengan Dictionary")
+print(28*"=" + "\n")
+
+akun = {"admin": "1234", "user1": "abcd", "user2": "xyz"}
+
+username = input("Masukkan username: ")
+password = input("Masukkan password: ")
+
+# Cek apakah username dan password ada di dictionary
+if username in akun and akun[username] == password: 
+    print("Login Berhasil!")
+else:
+    print("Login Gagal!")
+exit()
+
+
+# Menghitung Total dalam List
+print(28*"=")
+print("Menghitung Total dalam List")
+print(28*"=" + "\n")
+
+angka = [5, 10, 15, 20, 25]
+jumlah = 0
+
+for i in angka:
+    jumlah += i
+print(f"Total jumlah: {jumlah}")
+exit()
+
+# Looping dengan List
+print(20*"=")
+print("Looping dengan List")
+print(20*"=" + "\n")
+
+angka = [10, 20, 30, 40, 50]
+
+for i in angka:
+    print(i)
+exit()
+
 # Cek Angka Ganjil atau Genap
 print(35*"=")
 print("Cek Angka Ganjil atau Genap")
