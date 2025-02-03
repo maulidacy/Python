@@ -1,6 +1,4 @@
 # Program Kalkulator Sederhana
-# Buat program yang meminta pengguna memilih operasi (+, -, *, /), lalu memasukkan dua angka. 
-# Gunakan if-else untuk menjalankan operasi yang dipilih.
 print(40*"=")
 print("Program Kalkulator Sederhana")
 print(40*"=" + "\n")
