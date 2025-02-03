@@ -1,3 +1,26 @@
+# Program Kalkulator Sederhana
+# Buat program yang meminta pengguna memilih operasi (+, -, *, /), lalu memasukkan dua angka. 
+# Gunakan if-else untuk menjalankan operasi yang dipilih.
+print(40*"=")
+print("Program Kalkulator Sederhana")
+print(40*"=" + "\n")
+
+operasi_aritmatika = input("Pilih operasi (+, -, *, /): ")
+angka_pertama = float(input("Masukkan angka pertama: "))
+angka_kedua = float(input("Masukkan angka kedua: "))
+
+if operasi_aritmatika == "+":
+    print(f"Hasil: {angka_pertama + angka_kedua}")
+elif operasi_aritmatika == "-":
+    print(f"Hasil: {angka_pertama - angka_kedua}")
+elif operasi_aritmatika == "*":
+    print(f"Hasil: {angka_pertama * angka_kedua}")
+elif operasi_aritmatika == "/":
+    print(f"Hasil: {angka_pertama / angka_kedua}")
+else:
+    print("Operasi tidak valid. Silakan memilih operasi yang valid.")
+exit()
+
 # Menampilkan Bilangan Prima dalam Rentang Tertentu
 print(49*"=")
 print("Menampilkan Bilangan Prima dalam Rentang Tertentu")
