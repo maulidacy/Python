@@ -1,3 +1,23 @@
+# Mengecek Kata Palindrom 
+print(23*"=")
+print("Mengecek Kata Palindrom")
+print(23*"=" + "\n")
+
+kata = input("Masukkan kata: ")
+# Membuat variabel untuk menyimpan kata yang diinputkan
+kata_asli = kata
+# Membuat variabel untuk menyimpan kata yang diinputkan dalam bentuk huruf ke
+# belakang
+kata_balik = kata[::-1]
+# Membuat perbandingan antara kata asli dan kata yang diinputkan dalam
+# bentuk huruf ke belakang
+if kata == kata_balik:
+    print(f"{kata_asli} adalah kata palindrom.")
+else:
+    print(f"{kata_asli} bukan kata palindrom.")
+exit()
+
+
 # Menghitung Rata-rata Nilai
 print(25*"=")
 print("Menghitung Rata-rata Nilai")
