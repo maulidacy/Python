@@ -1,21 +1,39 @@
+
+
+# Hitung Jumlah Huruf dalam Kalimat
+print(33*"=")
+print("Hitung Jumlah Huruf dalam Kalimat")
+print(33*"=" + "\n")
+
+kalimat = input("Masukkan kalimat: ")
+huruf = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz"
+jumlah_huruf = 0
+
+for i in  huruf:
+    jumlah_huruf += kalimat.count(i)
+print(f"Jumlah huruf: {jumlah_huruf}")
+
+exit()
+
+
 # Mengecek Kata Palindrom 
 print(23*"=")
 print("Mengecek Kata Palindrom")
 print(23*"=" + "\n")
 
 kata = input("Masukkan kata: ")
-# Membuat variabel untuk menyimpan kata yang diinputkan
-kata_asli = kata
-# Membuat variabel untuk menyimpan kata yang diinputkan dalam bentuk huruf ke
-# belakang
-kata_balik = kata[::-1]
-# Membuat perbandingan antara kata asli dan kata yang diinputkan dalam
-# bentuk huruf ke belakang
+
+kata_asli = kata # Membuat variabel untuk menyimpan kata yang diinputkan
+kata_balik = kata[::-1] # Membuat variabel untuk menyimpan kata yang diinputkan dalam bentuk huruf kebelakang
+
+# Membuat perbandingan antara kata asli dan kata yang diinputkan dalam bentuk huruf ke belakang
 if kata == kata_balik:
     print(f"{kata_asli} adalah kata palindrom.")
 else:
     print(f"{kata_asli} bukan kata palindrom.")
 exit()
+
+
 
 
 # Menghitung Rata-rata Nilai
