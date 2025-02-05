@@ -1,11 +1,43 @@
+# Menebak Angka
+print(14*"=")
+print("Menebak Angka")
+print(14*"=" + "\n")
+
+angka_rahasia = 7
+tebakan = 0
+
+while tebakan != angka_rahasia:
+    tebakan = int(input("Tebak angka (1-10): "))
+    if tebakan == angka_rahasia:
+        print("Benar! Anda menang.")
+    else:
+        print("Salah! Coba lagi.")
+
+exit()
+
+
+# Hitung Mundur
+print(14*"=")
+print("Hitung Mundur")
+print(14*"=" + "\n")    
+
+n = int(input("Masukkan angka: "))
+
+while 1 <= n:
+    print(n)
+    n -= 1
+    
+exit()
+
+
 # Menampilkan Pola Piramida Angka 
 print(32*"=")
 print("Menampilkan Pola Piramida Angka")
 print(32*"=" + "\n")
 
 tinggi = int(input("Masukkan tinggi piramida: "))
-for i in range(1, tinggi + 1):
-    print('*' * i)
+for i in range(1, tinggi + 1): #melakukan iterasi dari 1 hingga tinggi.
+    print('*' * i) # mencetak bintang sebanyak i kali, menghasilkan pola segitiga.
 exit()
 
 # Hitung Jumlah Huruf dalam Kalimat
