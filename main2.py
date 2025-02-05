@@ -1,4 +1,12 @@
+# Menampilkan Pola Piramida Angka 
+print(32*"=")
+print("Menampilkan Pola Piramida Angka")
+print(32*"=" + "\n")
 
+tinggi = int(input("Masukkan tinggi piramida: "))
+for i in range(1, tinggi + 1):
+    print('*' * i)
+exit()
 
 # Hitung Jumlah Huruf dalam Kalimat
 print(33*"=")
