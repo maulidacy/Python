@@ -1,3 +1,19 @@
+
+# Menjumlahkan Bilangan Sampai Nol 
+print(35*"=")
+print("Menjumlahkan Bilangan Sampai Nol")
+print(35*"=" + "\n")
+
+jumlah = 0
+
+while True:
+    angka = int(input("Masukkan angka (0 untuk berhenti): "))
+    if angka == 0:
+        break
+    jumlah += angka
+print("Jumlah total: ", jumlah)
+exit()
+
 # Menghitung Angka Genap 
 print(25*"=")
 print("Menghitung Angka Genap")
