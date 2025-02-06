@@ -1,3 +1,18 @@
+# Mengulang Input Sampai Benar
+print(30*"=")
+print("Mengulang Input Sampai Benar")
+print(30*"=" + "\n")
+
+password = "python123"
+ps = ""
+
+while ps != password:
+    ps = input("Masukkan password: ")
+    if ps == password:
+        print("Password benar! Selamat datang.")
+    else:
+        print("Password salah! Coba lagi.")
+exit()
 
 # Menjumlahkan Bilangan Sampai Nol 
 print(35*"=")
