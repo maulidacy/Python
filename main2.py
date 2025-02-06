@@ -1,3 +1,25 @@
+# Menghitung Angka Genap 
+print(25*"=")
+print("Menghitung Angka Genap")
+print(25*"=" + "\n")
+
+n = int(input("Masukkan angka: "))
+
+# Menghitung jumlah angka genap dari 1 hingga n
+jumlah_genap = 0
+print("Angka genap:", end=" ")
+
+for i in range(1, n + 1):
+    if i % 2 == 0:
+        print(i, end=" ")
+        jumlah_genap += 1
+
+print()
+print("Jumlah angka genap:", jumlah_genap)
+exit()
+
+   
+
 # Menebak Angka
 print(14*"=")
 print("Menebak Angka")
