@@ -17,7 +17,7 @@ while kesempatan > 0:
     elif input_username == username and input_password != password:
         kesempatan -= 1
         print(f"Password salah! {kesempatan} percobaan tersisa.")
-if kesempatan == 0:
+if kesempatan == 0: # Memeriksa apakah kesempatan telah habis.
     print("Maaf kesempatan habis. Akun terkunci!")
 exit()
 
