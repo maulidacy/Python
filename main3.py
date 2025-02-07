@@ -1,3 +1,20 @@
+# Menghitung Rata-rata Nilai Siswa (For Loop)
+print(35*"=")
+print("Menghitung Rata-rata Nilai Siswa")
+print(35*"=" + "\n")
+
+jumlah_siswa = int(input("Masukkan jumlah siswa: "))
+total_nilai = 0
+
+for i in range(jumlah_siswa):
+    nilai = float(input(f"Masukkan nilai siswa ke-{i +1 }: "))
+    total_nilai += nilai
+    rata_rata = total_nilai / jumlah_siswa
+print(f"Rata-rata nilai kelas: {rata_rata}")
+
+exit()
+
+
 # Sistem Login dengan Batas Percobaan (While Loop) 
 print(35*"=")
 print("Sistem Login dengan Batas Percobaan")
