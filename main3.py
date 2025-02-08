@@ -13,8 +13,9 @@ for i in range(jumlah_barang):
 print("\nDaftar barang di gudang:")
 for i in range(len(barang_list)): # len(barang_list) Mengembalikan jumlah elemen dalam barang_list. 
     print(f"{i + 1}. {barang_list[i]}")
-
 exit()
+
+
 #)-------------------------Konversi Suhu (For Loop)-------------------------
 print(15*"=")
 print("Konversi Suhu")
