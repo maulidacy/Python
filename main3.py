@@ -1,8 +1,24 @@
-#-------------------------Konversi Suhu (For Loop)-------------------------
+#)-------------------------Pengelolaan Stok Barang (For Loop))-------------------------
+print(20*"=")
+print("Pengelolaan Stok Barang")
+print(20*"=" + "\n")
+
+jumlah_barang = int(input("Masukkan jumlah barang: ")) 
+
+barang_list = []
+for i in range(jumlah_barang):
+    barang = input(f"Masukkan nama barang ke-{i + 1}: ")
+    barang_list.append(barang)
+
+print("\nDaftar barang di gudang:")
+for i in range(len(barang_list)): # len(barang_list) Mengembalikan jumlah elemen dalam barang_list. 
+    print(f"{i + 1}. {barang_list[i]}")
+
+exit()
+#)-------------------------Konversi Suhu (For Loop)-------------------------
 print(15*"=")
 print("Konversi Suhu")
 print(15*"=" + "\n")
-
 
 def celsius_to_fahrenheit(celsius):
     return (celsius * 9/5) + 32
@@ -17,7 +33,7 @@ for i in range(jumlah_suhu):
 print("\nHasil konversi:")
 for suhu in suhu_list:
     fahrenheit = celsius_to_fahrenheit(suhu)
-    print(f"{int(suhu)}C = {int(fahrenheit)}F")
+    print(f"{int(suhu)}C = {int(fahrenheit)}F") # Menggunakan int() untuk mengonversi hasil ke integer
 exit()
 
 
