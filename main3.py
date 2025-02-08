@@ -1,3 +1,26 @@
+#-------------------------Konversi Suhu (For Loop)-------------------------
+print(15*"=")
+print("Konversi Suhu")
+print(15*"=" + "\n")
+
+
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+jumlah_suhu = int(input("Masukkan jumlah suhu: "))
+
+suhu_list = [] # Menyimpan suhu yang dimasukkan
+for i in range(jumlah_suhu):
+    suhu = float(input(f"Masukkan suhu ke-{i + 1} (C): "))
+    suhu_list.append(suhu) # menambahkan nilai suhu yang dimasukkan oleh pengguna ke dalam daftar suhu_list.
+
+print("\nHasil konversi:")
+for suhu in suhu_list:
+    fahrenheit = celsius_to_fahrenheit(suhu)
+    print(f"{int(suhu)}C = {int(fahrenheit)}F")
+exit()
+
+
 #-------------------------Mesin Parkir (While Loop)-------------------------
 print(15*"=")
 print("Mesin Parkir")
