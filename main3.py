@@ -1,3 +1,27 @@
+#-------------------------Penjualan Tiket Konser (While Loop)-------------------------
+print(20*"=")
+print("Penjualan Tiket Konser")
+print(20*"=" + "\n")
+
+tiket_tersedia = 100
+tiket_sisa = 0
+
+print(f"Tiket tersedia: {tiket_tersedia}")
+
+while True:
+    jumlah_tiket = int(input("Masukkan jumlah tiket yang ingin dibeli: "))
+    if jumlah_tiket <= tiket_tersedia:
+        tiket_sisa = tiket_tersedia - jumlah_tiket
+        tiket_tersedia = tiket_sisa
+        print(f"Tiket berhasil dibeli. Sisa tiket: {tiket_tersedia}")
+    else:
+        print("Maaf, tiket habis!")
+        break
+
+exit()
+
+
+
 #-------------------------Simulasi ATM (While Loop)-------------------------
 print(13*"=")
 print("Simulasi ATM")
