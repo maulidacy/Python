@@ -1,4 +1,25 @@
-#)-------------------------Pengelolaan Stok Barang (For Loop))-------------------------
+#-------------------------Pemesanan Tiket Bioskop (While Loop)-------------------------
+print(20*"=")
+print("Pemesanan Tiket Bioskop")
+print(20*"=" + "\n")
+
+harga_pertiket = 50000
+total_harga = 0
+jumlah_tiket = 0
+
+while True:
+    jumlah_tiket = int(input("Masukkan jumlah tiket: "))
+    if jumlah_tiket <= 0:
+        print("Terima kasih telah membeli tiket!")
+        break
+    total_harga = harga_pertiket * jumlah_tiket
+    print(f"Total harga: {total_harga}")
+
+exit()
+
+
+
+#-------------------------Pengelolaan Stok Barang (For Loop)-------------------------
 print(20*"=")
 print("Pengelolaan Stok Barang")
 print(20*"=" + "\n")
@@ -16,7 +37,7 @@ for i in range(len(barang_list)): # len(barang_list) Mengembalikan jumlah elemen
 exit()
 
 
-#)-------------------------Konversi Suhu (For Loop)-------------------------
+#-------------------------Konversi Suhu (For Loop)-------------------------
 print(15*"=")
 print("Konversi Suhu")
 print(15*"=" + "\n")
