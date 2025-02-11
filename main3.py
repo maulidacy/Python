@@ -1,3 +1,29 @@
+#-------------------------Simulasi ATM (While Loop)-------------------------
+print(13*"=")
+print("Simulasi ATM")
+print(13*"=" + "\n")
+
+print("1. Cek Saldo")
+print("2. Tarik Uang")
+print("3. Keluar")
+print()
+
+saldo = 1000000
+
+while True:
+    menu = int(input("Pilih menu: "))
+    if menu == 1:
+        print(f"Saldo Anda: Rp. {saldo}")
+    elif menu == 2:
+        penarikan = float(input("Masukkan jumlah penarikan: Rp."))
+        print("Penarikan berhasil! Sisa saldo: RP. ", saldo - penarikan)
+    elif menu == 3:
+        print("Terima kasih telah menggunakan layanan ATM.")
+        break
+    else:
+        print("Menu tidak tersedia. Silakan pilih menu lainnya.")
+exit()
+
 #-------------------------Pemesanan Tiket Bioskop (While Loop)-------------------------
 print(20*"=")
 print("Pemesanan Tiket Bioskop")
