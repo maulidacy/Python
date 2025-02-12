@@ -1,7 +1,23 @@
+#-------------------------Penilaian Ujian Mahasiswa (For Loop)-------------------------
+print(25*"=")
+print("Penilaian Ujian Mahasiswa")
+print(25*"=" + "\n")
+
+jumlah_mahasiswa = int(input("Masukkan jumlah mahasiswa: "))
+
+for i in range(jumlah_mahasiswa):
+    nilai = float(input(f"Masukkan nilai mahasiswa ke-{i + 1}: "))
+    if nilai >= 60 and nilai <= 100:
+        print(f"Mahasiswa ke-{i + 1}: Lulus")
+    else:
+        print(f"Mahasiswa ke-{i + 1}: Tidak Lulus")
+exit()
+
+
 #-------------------------Penjualan Tiket Konser (While Loop)-------------------------
-print(20*"=")
+print(25*"=")
 print("Penjualan Tiket Konser")
-print(20*"=" + "\n")
+print(25*"=" + "\n")
 
 tiket_tersedia = 100
 tiket_sisa = 0
