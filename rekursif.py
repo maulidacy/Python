@@ -1,3 +1,21 @@
+#------------------------Mencari Nilai Maksimum dalam List------------------------
+def cari_maksimum(lst):
+    return max(lst) #Mencari Nilai Minimum dalam List
+
+def cari_minimum(lst):
+    return min(lst) #Mengurutkan List dalam Urutan Ascending
+
+def urut_asc(lst):
+    return sorted(lst) #Mengurutkan List dalam Urutan Descending
+
+def urut_desc(lst):
+    return sorted(lst, reverse=True)
+
+print(cari_maksimum([3, 1, 8, 2, 5]))  # Output: 8
+print(cari_maksimum([10, 20, 5, 30, 25]))  # Output: 30
+
+exit()
+
 #------------------------Jumlahkan Digit dalam Bilangan------------------------
 def jumlahkan_digit(n):
     if n == 0:
