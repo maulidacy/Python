@@ -1,3 +1,20 @@
+#------------------------Menghitung Pajak Berlapis (Progressive Tax)------------------------
+def hitung_pajak(pendapatan):
+    if pendapatan <= 5000000:
+        return 0.05 * pendapatan
+    elif pendapatan <= 10000000:
+        return (5000000 * 0.05) + ((pendapatan - 5000000) * 0.10)
+    else:
+        return (5000000 * 0.05) + (5000000 * 0.10) + ((pendapatan - 10000000) * 0.15)
+
+pendapatan1 = 12000000
+pendapatan2 = 8000000
+
+print(f"Pajak untuk pendapatan {pendapatan1}: Rp {hitung_pajak(pendapatan1):,.0f}")
+print(f"Pajak untuk pendapatan {pendapatan2}: Rp {hitung_pajak(pendapatan2):,.0f}")
+
+exit()
+
 #------------------------Mencari Nilai Maksimum dalam List------------------------
 def cari_maksimum(lst):
     return max(lst) #Mencari Nilai Minimum dalam List
