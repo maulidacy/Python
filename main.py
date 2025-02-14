@@ -1,4 +1,23 @@
-# Program Kalkulator Sederhana
+#---------------------------------Variabel dan Tipe Data---------------------------------
+nama = "Budi"
+umur = 20
+tinggi = 170.5
+status_mahasiswa = True
+hobi = ["Membaca", "Olahraga", "Bermain Musik"]
+data_diri = ("Budi", 20, 170.5)
+nilai_ujian = {"Matematika": 90, "Fisika": 85, "Kimia": 88}
+
+print("Nama :", nama, "| Tipe data:", type(nama))
+print("Umur :", umur, "| Tipe data:", type(umur))
+print("Tinggi :", tinggi, "| Tipe data:", type(tinggi))
+print("Status Mahasiswa :", status_mahasiswa, "| Tipe data:", type(status_mahasiswa))
+print("Hobi :", hobi, "| Tipe data:", type(hobi))
+print("Data diri (nama, umur, tinggi) :", data_diri, "| Tipe data:", type(data_diri))
+print("Nilai ujian (Matematika, Fisika, Kimia) :", nilai_ujian,  "| Tipe data:", type(nilai_ujian))
+exit()
+
+          
+#---------------------------------Program Kalkulator Sederhana---------------------------------
 print(40*"=")
 print("Program Kalkulator Sederhana")
 print(40*"=" + "\n")
@@ -19,7 +38,8 @@ else:
     print("Operasi tidak valid. Silakan memilih operasi yang valid.")
 exit()
 
-# Menampilkan Bilangan Prima dalam Rentang Tertentu
+
+#---------------------------------Menampilkan Bilangan Prima dalam Rentang Tertentu---------------------------------
 print(49*"=")
 print("Menampilkan Bilangan Prima dalam Rentang Tertentu")
 print(49*"=" + "\n")
@@ -38,7 +58,7 @@ for i in range(bawah, atas + 1):
             print(f"Bilangan prima: {i}")
 exit()
     
-# Cek Login dengan Dictionary
+#---------------------------------Cek Login dengan Dictionary---------------------------------
 print(28*"=")
 print("Cek Login dengan Dictionary")
 print(28*"=" + "\n")
@@ -56,7 +76,7 @@ else:
 exit()
 
 
-# Menghitung Total dalam List
+#---------------------------------Menghitung Total dalam List---------------------------------
 print(28*"=")
 print("Menghitung Total dalam List")
 print(28*"=" + "\n")
@@ -69,7 +89,7 @@ for i in angka:
 print(f"Total jumlah: {jumlah}")
 exit()
 
-# Looping dengan List
+#---------------------------------Looping dengan List---------------------------------
 print(20*"=")
 print("Looping dengan List")
 print(20*"=" + "\n")
@@ -80,7 +100,7 @@ for i in angka:
     print(i)
 exit()
 
-# Cek Angka Ganjil atau Genap
+#---------------------------------Cek Angka Ganjil atau Genap---------------------------------
 print(35*"=")
 print("Cek Angka Ganjil atau Genap")
 print(35*"=" + "\n")
@@ -93,7 +113,7 @@ else:
     print("Angka tersebut adalah ganjil.")
 exit()
 
-# Cek Bilangan Positif, Negatif, atau Nol
+#---------------------------------Cek Bilangan Positif, Negatif, atau Nol---------------------------------
 print(40*"=")
 print("Cek Bilangan Positif, Negatif, atau Nol")
 print(40*"=" + "\n")
@@ -110,7 +130,7 @@ else:
 exit()
 
 
-# Operasi Aritmatika Sederhana
+#---------------------------------Operasi Aritmatika Sederhana---------------------------------
 print(28*"=")
 print("Operasi Aritmatika Sederhana")
 print(28*"=" + "\n")
@@ -126,7 +146,7 @@ exit()
 
 
 
-# Hitung Luas Lingkaran
+#---------------------------------Hitung Luas Lingkaran---------------------------------
 print(20*"=")
 print("Hitung Luas Lingkaran")
 print(20*"=" + "\n")
@@ -139,7 +159,7 @@ exit()
 
 
 
-# Deklarasi Variabel
+#---------------------------------Deklarasi Variabel---------------------------------
 print(20*"=")
 print("Deklarasi Variabel")
 print(20*"=" + "\n")
