@@ -1,3 +1,21 @@
+#------------------------Sistem Kasir (Hitung Total Harga dengan Diskon Bertingkat)------------------------
+def hitung_total(harga):
+    if harga >= 500000:
+        diskon = 0.1 * harga
+        return harga - diskon
+    elif harga >= 1000000:
+        diskon = 0.15 * harga
+        return harga - diskon
+    else:
+        diskon = 0.2 * harga
+        return harga - diskon
+
+print(hitung_total(1200000))  # Output: Total setelah diskon
+print(hitung_total(700000))
+exit()
+
+
+
 #------------------------Struktur Folder dan File (Recursive File Explorer)------------------------
 def tampilkan_folder(folder, level=0):
     """Menampilkan isi folder dan file secara rekursif"""
