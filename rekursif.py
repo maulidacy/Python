@@ -1,3 +1,34 @@
+#------------------------Struktur Folder dan File (Recursive File Explorer)------------------------
+def tampilkan_folder(folder, level=0):
+    """Menampilkan isi folder dan file secara rekursif"""
+    for key, value in folder.items():
+        print("   " * level + "📂 " + key)  # Cetak nama folder
+
+        if isinstance(value, dict):  # Jika isinya folder, panggil rekursi
+            tampilkan_folder(value, level + 1)
+        elif isinstance(value, list):  # Jika isinya list (file), cetak file-nya
+            for file in value:
+                if file.endswith((".jpg", ".png")):
+                    icon = "🖼️"
+                else:
+                    icon = "📄"
+                print("   " * (level + 1) + f"{icon} {file}")
+
+# Contoh Data
+data = {
+    "Project": {
+        "Documents": ["file1.txt", "file2.docx"],
+        "Images": ["photo1.jpg", "photo2.png"]
+    }
+}
+
+# Jalankan fungsi
+tampilkan_folder(data)
+
+exit()
+
+
+
 #------------------------Menghitung Pajak Berlapis (Progressive Tax)------------------------
 def hitung_pajak(pendapatan):
     if pendapatan <= 5000000:
