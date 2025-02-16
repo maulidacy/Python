@@ -1,3 +1,19 @@
+#------------------------Chatbot Sederhana dengan Balasan Bertingkat------------------------
+def chatbot(input_pengguna):
+    input_pengguna = input("Apa yang ingin Anda tanyakan? ")
+    if input_pengguna == "harga":
+        input_pengguna = input("Produk apa? ")
+    elif input_pengguna == "kue bulan":
+        print("Harga kue bulan Rp. 45.000/pax ")
+    elif input_pengguna == "kue lapis":
+        print("Harga kue lapis Rp. 30.000/pax ")
+    else:
+        input_pengguna = input("Maaf, saya tidak mengerti pertanyaan Anda. ")
+        return input_pengguna
+    
+chatbot("harga?")
+exit()
+
 #------------------------Sistem Kasir (Hitung Total Harga dengan Diskon Bertingkat)------------------------
 def hitung_total(harga):
     if harga >= 500000:
