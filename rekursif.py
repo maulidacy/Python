@@ -1,3 +1,25 @@
+#------------------------Fibonacci (Dasar - Menengah)------------------------
+def fibonacci(n):
+    if n < 0:
+        raise ValueError("Indeks tidak boleh negatif") # Mengangkat kesalahan jika n negatif
+    elif n == 0:
+        return 0 # Bilangan Fibonacci ke-0 adalah 0
+    elif n == 1:
+        return 1 # Bilangan Fibonacci ke-1 adalah 1
+    else:
+        # Menghitung Fibonacci dengan pemanggilan rekursif
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+try:
+    n = int(input("Input n : "))
+    result = fibonacci(n) # Memanggil fungsi untuk menghitung Fibonacci ke-n
+    print(f"Bilangan Fibonacci ke-{n} adalah {result}")
+except Exception as e:
+    print(f"Terjadi kesalahan: {e}") # Menangkap dan mencetak kesalahan jika terjadi
+exit()
+
+
+
 #------------------------Chatbot Sederhana dengan Balasan Bertingkat------------------------
 def chatbot(input_pengguna):
     input_pengguna = input("Apa yang ingin Anda tanyakan? ")
