@@ -102,7 +102,7 @@ kalimat = input("Masukkan kalimat: ")
 huruf = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz"
 jumlah_huruf = 0
 
-for i in  huruf:
+for i in huruf:
     jumlah_huruf += kalimat.count(i)
 print(f"Jumlah huruf: {jumlah_huruf}")
 
