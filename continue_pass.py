@@ -13,7 +13,7 @@ lyrics_with_durations = [
     ("ubur ubur ikan", 0.6),
     ("ikan i ikan lele", 0.6),
     ("i i i i i ikan lele", 0.6),
-    ("ikan kan kan kan ikan lele", 0.6),
+    ("ikan kan kan kan ikan lele", 0.7),
     ("ubur ubur ikan lele", 0.5),
     ("ikan ikan i ikan", 0.5),
     ("i i i i i ikan lele", 0.5),
