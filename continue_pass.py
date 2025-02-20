@@ -1,3 +1,15 @@
+#------------------------Melewati Angka Kelipatan 3 dalam Perulangan while------------------------
+angka = 1
+while angka <= 15:
+    if angka % 3 == 0:
+        angka += 1
+        continue
+    print(angka)
+    angka += 1
+
+exit()
+
+#------------------------Lirik lagu------------------------
 import time
 
 # Daftar lirik dan durasi masing-masing baris (dalam detik)
