@@ -1,3 +1,16 @@
+#------------------------Mencari Elemen dalam List------------------------
+hewan = ["kucing", "anjing", "kelinci", "sapi"]
+
+for cek in hewan:
+    cek = input("cek hewan: ")
+    if cek in hewan:
+        print(f"{cek} ditemukan")
+        break
+    else:
+        print(f"{cek} tidak ditemukan")
+exit()
+
+
 #------------------------Perulangan dalam List------------------------
 name = ["Andi", "Budi", "Cici", "Dodi"]
 
