@@ -1,3 +1,16 @@
+#------------------------Menambahkan dan Menghapus Elemen------------------------
+angka = []
+angka.append(10)
+angka.append(20)
+angka.append(30)
+angka.append(40)
+angka.append(50)
+angka.remove(30)
+
+print(angka)
+exit()
+
+
 #------------------------Mengubah Elemen dalam List------------------------
 warna = ["merah", "biru", "hijau", "kuning"]
 warna[2] = "ungu"
