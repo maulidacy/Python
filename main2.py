@@ -1,3 +1,25 @@
+#loop segitiga while
+sisi = 6
+
+count = 1
+while True:
+    print("*" * count)
+    count += 1
+    
+    if count > sisi:
+        break
+exit()
+
+#loop segitiga for
+sisi = 10
+
+count = 1  # dummy variable
+for i in range(sisi):
+    print("*" * count)
+    count += 1  # Increment count
+exit()
+
+
 # Mengulang Input Sampai Benar
 print(30*"=")
 print("Mengulang Input Sampai Benar")
