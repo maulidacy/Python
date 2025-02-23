@@ -1,11 +1,19 @@
+#------------------------Perulangan dalam List------------------------
+name = ["Andi", "Budi", "Cici", "Dodi"]
+
+for i in name:
+    print(i)
+exit()
+
+
 #------------------------Menambahkan dan Menghapus Elemen------------------------
 angka = []
-angka.append(10)
+angka.append(10) #menambahkan
 angka.append(20)
 angka.append(30)
 angka.append(40)
 angka.append(50)
-angka.remove(30)
+angka.remove(30) #menghapus
 
 print(angka)
 exit()
