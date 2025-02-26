@@ -1,3 +1,14 @@
+#------------------------Menghitung Total dan Rata-rata List------------------------
+angka = [10, 20, 30, 40, 50]
+jumlah_angka = len(angka)
+total = sum(angka)
+rata_rata = total / jumlah_angka
+
+print("Total: ", total)
+print("Rata-rata: ", rata_rata)
+exit()
+
+
 #------------------------Menghitung Jumlah Elemen dalam List------------------------
 bilangan = [2, 4, 6, 8, 10, 12, 14]
 jumlah_bilangan = len(bilangan)
