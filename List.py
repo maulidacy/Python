@@ -1,3 +1,11 @@
+#------------------------Menghitung Jumlah Elemen dalam List------------------------
+bilangan = [2, 4, 6, 8, 10, 12, 14]
+jumlah_bilangan = len(bilangan)
+
+print("Jumlah elemen dalam list: ", jumlah_bilangan)
+exit()
+
+
 #------------------------List 2 Dimensi (Nested List)------------------------
 siswa = [
     [10, 12, 14],  # Minggu 1
