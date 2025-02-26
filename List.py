@@ -1,3 +1,16 @@
+#------------------------Mengurutkan dan Membalik List------------------------
+angka = [5, 2, 9, 1, 7]
+print("List awal: ", angka)
+
+# Mengurutkan list dalam urutan ascending
+angka.sort()
+print("List setelah diurutkan: ", angka)
+# Membalik list
+angka.reverse()
+print("List setelah dibalik: ", angka)
+exit()
+
+
 #------------------------Mencari Elemen dalam List------------------------
 hewan = ["kucing", "anjing", "kelinci", "sapi"]
 
