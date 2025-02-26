@@ -1,3 +1,13 @@
+#------------------------Menyalin dan Membandingkan List------------------------
+kota = ['Jakarta', 'Surabaya', 'Bandung', 'Medan', 'Bali'] 
+kota_baru = kota.copy()
+kota_baru.append("Yogyakarta")
+
+print("Kota Awal: ", kota)
+print("Kota Update: ", kota_baru)
+exit()
+
+
 #------------------------Menghitung Total dan Rata-rata List------------------------
 angka = [10, 20, 30, 40, 50]
 jumlah_angka = len(angka)
