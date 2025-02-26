@@ -1,3 +1,16 @@
+#------------------------List 2 Dimensi (Nested List)------------------------
+siswa = [
+    [10, 12, 14],  # Minggu 1
+    [11, 13, 15],  # Minggu 2
+    [9, 10, 12]    # Minggu 3
+]
+
+print(siswa[1][2]) #Cetak jumlah siswa di minggu ke-2, hari ke-3.
+print(siswa[0][0]) #Cetak jumlah siswa di minggu pertama, hari pertama.
+exit()
+
+
+
 #------------------------Mengurutkan dan Membalik List------------------------
 angka = [5, 2, 9, 1, 7]
 print("List awal: ", angka)
