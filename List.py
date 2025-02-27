@@ -5,7 +5,15 @@ kota_baru.append("Yogyakarta")
 
 print("Kota Awal: ", kota)
 print("Kota Update: ", kota_baru)
+
+# Membandingkan kedua list
+if kota == kota_baru:
+    print("List sama.")
+else:
+    print("List tidak sama.")
+
 exit()
+
 
 
 #------------------------Menghitung Total dan Rata-rata List------------------------
