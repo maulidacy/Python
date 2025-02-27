@@ -1,8 +1,18 @@
+#------------------------Menentukan Angka Ganjil dan Genap dalam List------------------------
+angka = [10, 15, 20, 25, 30, 35, 40]
+ganjil = [x for x in angka if x % 2 != 0]
+genap = [x for x in angka if x % 2 == 0]
+
+print("List angka genap: ", genap)
+print("List angka ganjil: ", ganjil)
+exit()
+
+
 #------------------------Menghitung Jumlah Kemunculan Elemen dalam List------------------------
 angka = [3, 5, 7, 3, 3, 5, 9, 7, 3, 3]
 jumlah = angka.count(3)
 
-print("Angka 3 muncul sebanyak: ", jumlah)
+print(f"Angka 3 muncul sebanyak: {jumlah} kali")
 exit()
 
 
