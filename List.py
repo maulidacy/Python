@@ -1,3 +1,11 @@
+#------------------------Menghitung Jumlah Kemunculan Elemen dalam List------------------------
+angka = [3, 5, 7, 3, 3, 5, 9, 7, 3, 3]
+jumlah = angka.count(3)
+
+print("Angka 3 muncul sebanyak: ", jumlah)
+exit()
+
+
 #------------------------Menyalin dan Membandingkan List------------------------
 kota = ['Jakarta', 'Surabaya', 'Bandung', 'Medan', 'Bali'] 
 kota_baru = kota.copy()
