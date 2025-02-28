@@ -1,3 +1,22 @@
+#------------------------Mencari Nilai Maksimum dan Minimum dalam List------------------------
+#------------------------Menggabungkan dan Mengurutkan Dua List------------------------
+list1 = [5, 10, 15]  
+list2 = [2, 8, 12]
+
+print("List sebelum digabungkan:")
+print("List 1: ", list1)
+print("List 2: ", list2)
+
+# Menggabungkan dua list menggunakan fungsi extend() dan sort() untuk mengurutkan list gabungan
+list_gabungan = list1.copy()  # Membuat salinan list1
+list_gabungan.extend(list2)  # Menggabungkan list2 ke list1
+
+# Mengurutkan list gabungan
+list_gabungan.sort()
+print("List Gabungan yang Telah Diurutkan: ", list_gabungan)
+exit()
+
+
 #------------------------Menentukan Angka Ganjil dan Genap dalam List------------------------
 angka = [10, 15, 20, 25, 30, 35, 40]
 ganjil = [x for x in angka if x % 2 != 0]
