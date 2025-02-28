@@ -1,4 +1,13 @@
 #------------------------Mencari Nilai Maksimum dan Minimum dalam List------------------------
+angka = [4, 7, 1, 9, 12, 5]
+max_angka = max(angka)
+min_angka = min(angka)
+
+print("Nilai maksimum: ", max_angka)
+print("Minimum Nilai: ", min_angka)
+exit()
+
+
 #------------------------Menggabungkan dan Mengurutkan Dua List------------------------
 list1 = [5, 10, 15]  
 list2 = [2, 8, 12]
