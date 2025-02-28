@@ -1,3 +1,11 @@
+#------------------------Menghapus Duplikat dalam List------------------------
+angka = [1, 2, 2, 3, 4, 4, 5, 5, 6]
+
+angka_baru = list(set(angka)) # Menghapus duplikat dengan mengubah list menjadi set
+print(angka_baru)
+exit()
+
+
 #------------------------Mencari Nilai Maksimum dan Minimum dalam List------------------------
 angka = [4, 7, 1, 9, 12, 5]
 max_angka = max(angka)
