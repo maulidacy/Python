@@ -1,3 +1,28 @@
+#------------------------Menyusun List dari Input Pengguna------------------------
+name_new = []
+i = 0
+
+while True:
+    name = input(f"Masukkan nama ke-{i + 1}: ")
+    if name == 0:
+        break
+    name_new.append(name)
+    print("List nama: ", name_new)
+exit()
+
+#------------------------Menyusun List dari Input Pengguna------------------------
+name_new = []
+i = 0
+
+while True:
+    name = input(f"Masukkan nama ke-{i + 1}: ")
+    if name == "0":  # Check for string input "0" to break the loop
+        break
+    name_new.append(name)
+    print("List nama: ", name_new)
+    i += 1  # Increment the counter
+exit()
+
 #------------------------Menghapus Duplikat dalam List------------------------
 angka = [1, 2, 2, 3, 4, 4, 5, 5, 6]
 
