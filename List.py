@@ -1,3 +1,10 @@
+#------------------------Mencari Kata Terpanjang dalam List#------------------------
+kata = ["aku", "kamu", "dia", "kita", "mereka"]
+kata_terpanjang = max(kata, key=len)
+print(kata_terpanjang) # Output: mereka
+exit()
+
+
 #------------------------Menyusun List dari Input Pengguna------------------------
 name_new = []
 i = 0
