@@ -1,3 +1,11 @@
+#------------------------Membalik Kata dalam List------------------------
+kata = ["apel", "pisang", "mangga"]
+kata_terbalik = kata[::-1]
+print(kata_terbalik) 
+
+exit()
+
+
 #------------------------Mencari Kata Terpanjang dalam List#------------------------
 kata = ["aku", "kamu", "dia", "kita", "mereka"]
 kata_terpanjang = max(kata, key=len)
