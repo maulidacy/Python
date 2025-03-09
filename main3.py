@@ -1,3 +1,27 @@
+#-------------------------Konversi Mata Uang-------------------------
+# Fungsi untuk mengonversi Rupiah ke USD dan Euro
+def konversi_rupiah(rupiah):
+    kurs_usd = 15500
+    kurs_euro = 17000
+    
+    # Menghitung konversi
+    usd = rupiah / kurs_usd
+    euro = rupiah / kurs_euro
+    
+    return usd, euro
+
+# Input dari pengguna
+jumlah_rupiah = float(input("Masukkan jumlah uang dalam Rupiah: "))
+
+# Melakukan konversi
+usd, euro = konversi_rupiah(jumlah_rupiah)
+
+# Menampilkan hasil
+print(f"{jumlah_rupiah} Rupiah setara dengan {usd:.2f} USD atau {euro:.2f} Euro.")
+exit()
+
+
+
 #-------------------------Hitung Waktu Perjalanan-------------------------
 jarak = float(input("Masukkan jarak perjalanan (km): "))
 kecepatan = float(input("Masukkan kecepatan rata-rata (km/jam): "))
