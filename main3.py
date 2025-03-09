@@ -1,3 +1,12 @@
+#-------------------------Hitung Waktu Perjalanan-------------------------
+jarak = float(input("Masukkan jarak perjalanan (km): "))
+kecepatan = float(input("Masukkan kecepatan rata-rata (km/jam): "))
+waktu = jarak / kecepatan
+
+print(f"Perjalanan akan memakan waktu sekitar {waktu:.2f} jam.")
+exit()
+
+
 #-------------------------Penilaian Ujian Mahasiswa (For Loop)-------------------------
 print(25*"=")
 print("Penilaian Ujian Mahasiswa")
