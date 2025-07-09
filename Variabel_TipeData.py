@@ -12,3 +12,12 @@ c = 10
 d = 3
 Hitung = a+b*c-d/b
 print(f"Hasil perhitungan: {Hitung}")
+
+#------------------------- 4. Ubah dan Tampilkan Tipe Data -------------------------
+nilaiA = "10"
+nilaiB = 5
+nilaiC = 2.4
+
+print(f"NilaiA awal: {nilaiA}, Tipe data: {type(nilaiA)}, -> setelah diubah: {int(nilaiA)}, Tipe data: {type(int(nilaiA))}")
+print(f"NilaiB awal: {nilaiB}, Tipe data: {type(nilaiB)}, -> setelah diubah: {float(nilaiB)}, Tipe data: {type(str(nilaiB))}")
+print(f"NilaiC awal: {nilaiC}, Tipe data: {type(nilaiC)}, -> setelah diubah: {int(nilaiC)}, Tipe data: {type(int(nilaiC))}")
