@@ -1,3 +1,14 @@
+##------------------------- 4. Login Sederhana -------------------------
+user = input("username = ") 
+passw = input("password = ") 
+username = "admin" 
+password = "123" 
+
+if user == username and passw == password: 
+    print("Login Berhasil!") 
+else: 
+    print("Login gagal. Coba Lagi!")
+exit()
 
 #------------------------- 3. Menghitung Nilai Akhir Mahasiswa ------------------------- 
 nilai_uts = float(input("Nilai UTS: ")) 
