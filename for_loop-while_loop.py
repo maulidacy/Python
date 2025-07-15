@@ -1,8 +1,17 @@
-#------------------------- 1. Login Sederhana -------------------------
-huruf = input("Masukan 1 huruf : ") 
-huruf_vokal = "a e i o u A E I O U"
+#------------------------- 2. Tampilkan angka genap dari 1 sampai 20 -------------------------
+jumlah_genap = 0
+print("Angka genap:", end=" ")
+n = 20  # batas atas
 
-if huruf in huruf_vokal:
-    print(f"Ya, huruf {huruf} adalah huruf vokal")
-else:  
-    print(f"Tidak, huruf {huruf} bukan huruf vokal")
+for i in range(1, n + 1): # Loop dari angka 1 sampai 20 (range(1, 21), karena n + 1 = 21 → akhir range tidak termasuk).
+    if i % 2 == 0:
+        print(i, end=" ") # Mencetak tulisan "Angka genap:" di awal baris, tanpa ganti baris (end=" ").
+        jumlah_genap += 1
+
+print()
+print("Jumlah angka genap:", jumlah_genap)
+exit()
+
+#------------------------- 1. Cetak angka 1 sampai 10 -------------------------
+for i in range(1, 11):
+    print(i)
