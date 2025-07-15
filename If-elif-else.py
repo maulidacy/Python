@@ -1,3 +1,13 @@
+#------------------------- 1. Cek Huruf Vokal -------------------------
+huruf = input("Masukan 1 huruf : ") 
+huruf_vokal = "a e i o u A E I O U"
+
+if huruf in huruf_vokal:
+    print(f"Ya, huruf {huruf} adalah huruf vokal")
+else:  
+    print(f"Tidak, huruf {huruf} bukan huruf vokal")
+exit()
+
 nilai_uts = float(input("Nilai UTS: ")) 
 nilai_uas = float(input("Nilai UAS: ")) 
 nilai_tugas = float(input("Nilai Tugas: ")) 

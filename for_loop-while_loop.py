@@ -1,21 +1,8 @@
-nilai_uts = float(input("Nilai UTS: ")) 
-nilai_uas = float(input("Nilai UAS: ")) 
-nilai_tugas = float(input("Nilai Tugas: ")) 
-Hnilai_uts = nilai_uts * 0.3
-Hnilai_uas = nilai_uas * 0.3
-Hnilai_tugas = nilai_tugas * 0.4
-total_nilai = Hnilai_uts + Hnilai_uas + Hnilai_tugas
+#------------------------- 1. Login Sederhana -------------------------
+huruf = input("Masukan 1 huruf : ") 
+huruf_vokal = "a e i o u A E I O U"
 
-if total_nilai >= 85: 
-    print("Nilai Akhir = A")
-    print("Selamat, Anda lulus dengan nilai A!")
-elif total_nilai >= 70: 
-    print("Nilai Akhir = B")
-    print("Bagus, Anda lulus dengan nilai B!")
-elif total_nilai >= 60: 
-    print("Nilai Akhir = C")
-    print("Anda lulus dengan nilai C, perbaiki di ujian berikutnya.")
-else: 
-    print("Nilai Akhir = D")
-    print("Maaf, Anda tidak lulus. Silakan coba lagi di semester berikutnya.")
-exit()
+if huruf in huruf_vokal:
+    print(f"Ya, huruf {huruf} adalah huruf vokal")
+else:  
+    print(f"Tidak, huruf {huruf} bukan huruf vokal")
