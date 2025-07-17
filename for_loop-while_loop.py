@@ -1,3 +1,20 @@
+#-------------------------- 8. Jumlahkan angka hingga total ≥ 100, Hentikan jika total sudah ≥ 100.--------------------------
+jumlahAngka = 100
+angka = 0
+total = 0
+
+while total != jumlahAngka:
+    angka = int(input("Masukkan angka: "))
+    total += angka
+    if total == jumlahAngka:
+        print("Total mencapai 100, program selesai.")
+    elif total > jumlahAngka:
+        print("Total melebihi 100, program selesai.")
+        break
+    else:
+        print(f"Total saat ini: {total}, masukkan angka lagi.")
+exit()
+
 #-------------------------- 7. Input sampai benar --------------------------
 angka = 5
 tebakan = 0 
