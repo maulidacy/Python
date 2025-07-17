@@ -1,3 +1,18 @@
+#------------------------- 4. Cetak segitiga bintang -------------------------
+n = int(input("Masukkan n: "))
+for i in range(1, n + 1):
+    print('*' * i)  # Mencetak bintang sebanyak i kali, menghasilkan pola segitiga.
+exit()
+
+#------------------------- 3. Hitung jumlah bilangan dari 1 sampai 100 -------------------------
+jumlahBilangan = 0
+n = 100
+
+for i in range(1, n + 1):
+    jumlahBilangan += i
+    print(f"Jumlah: {jumlahBilangan}")
+exit()
+
 #------------------------- 2. Tampilkan angka genap dari 1 sampai 20 -------------------------
 jumlah_genap = 0
 print("Angka genap:", end=" ")
