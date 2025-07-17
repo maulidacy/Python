@@ -1,3 +1,34 @@
+#-------------------------- 7. Input sampai benar --------------------------
+angka = 5
+tebakan = 0 
+
+while tebakan != 5:
+    tebakan = int(input("Masukkan angka: "))
+    if tebakan == angka:
+        print("Benar!")
+        break
+    elif tebakan != angka:
+        print("Salah!") 
+exit()
+
+#-------------------------- 6. Hitung mundur dari 10 ke 1 --------------------------
+i = 10
+while i >= 1: 
+    print(i) 
+    i -= 1
+exit()
+
+#-------------------------- 5. Hitung jumlah huruf vokal dalam sebuah kata atau kalimat -------------------------
+hurufVokal = "aeiouAEIOU"
+jumlah_huruf = 0
+kataOrKalimat = input("Masukkan kata atau kalimat: ")
+
+for i in kataOrKalimat:
+    if i in hurufVokal:
+        jumlah_huruf += 1
+print(f"Jumlah huruf vokal: {jumlah_huruf}")
+exit()
+
 #------------------------- 4. Cetak segitiga bintang -------------------------
 n = int(input("Masukkan n: "))
 for i in range(1, n + 1):
