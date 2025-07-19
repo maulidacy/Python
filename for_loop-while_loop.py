@@ -1,11 +1,15 @@
-angka = int(input("Masukkan angka: "))
+#---------------------------------------------------------------------------------------------
+n = 20
 
-if angka % 2 == 0:
-    print(f"Angka {angka} adalah Genap")
-elif angka % 2 != 0:
-    print(f"Angka {angka} adalah Ganjil")
+for i in range(1, n + 1):  # Loop dari angka 1 sampai 20 (range(1, 21), karena n + 1 = 21 → akhir range tidak termasuk).
+    if i % 2 == 0:
+        print(f"{i}", end=" ")
 exit()
 
+#---------------------------------------------------------------------------------------------
+for i in range (1, 11): 
+    print(f"{i}", end=" ")  # Mencetak angka 1 sampai 10 dalam satu baris, dipisahkan spasi.
+exit()
 #-------------------------- 8. Jumlahkan angka hingga total ≥ 100, Hentikan jika total sudah ≥ 100.--------------------------
 jumlahAngka = 100
 angka = 0
