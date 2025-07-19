@@ -1,3 +1,28 @@
+password = "rahasia"
+input_password = ""
+
+while input_password != password:
+    input_password = input("Masukkan password: ")
+    if input_password == password:
+        print("Akses diterima!")
+    else:
+        print("Akses ditolak!")
+exit()
+
+#---------------------------------------------------------------------------------------------
+x = 1
+
+while x <=5:
+    print(x)
+    x += 1
+exit()
+#---------------------------- itung jumlah angka dalam list ----------------------------------
+angka = [3, 5, 7, 9, 2]
+jumlah_total_angka = 0
+for i in angka:
+    jumlah_total_angka += i
+print(f"Jumlah total angka: {jumlah_total_angka}")
+exit()
 #---------------------------------------------------------------------------------------------
 n = 20
 
