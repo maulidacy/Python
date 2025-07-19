@@ -1,3 +1,11 @@
+angka = int(input("Masukkan angka: "))
+
+if angka % 2 == 0:
+    print(f"Angka {angka} adalah Genap")
+elif angka % 2 != 0:
+    print(f"Angka {angka} adalah Ganjil")
+exit()
+
 #-------------------------- 8. Jumlahkan angka hingga total ≥ 100, Hentikan jika total sudah ≥ 100.--------------------------
 jumlahAngka = 100
 angka = 0

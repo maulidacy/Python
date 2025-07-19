@@ -1,3 +1,31 @@
+#----------------------------------------------------------------------
+nilai = float(input("Masukkan nilai ujian: "))
+
+if nilai >= 80:
+    print("A")
+elif nilai >= 70:
+    print("B")
+elif nilai >= 60:
+    print("C")
+else:
+    print("D")
+exit()
+#----------------------------------------------------------------------
+angka = int(input("Masukkan angka: "))
+
+if angka % 2 == 0:
+    print(f"Angka {angka} adalah Genap")
+elif angka % 2 != 0:
+    print(f"Angka {angka} adalah Ganjil")
+exit()
+#----------------------------------------------------------------------
+umur = int(input("Masukkan umur Anda: "))
+if umur >= 17:
+    print("Selamat. Anda boleh membuat KTP")
+elif umur < 17:
+    print("Maaf. Belum cukup umur")
+exit()
+
 #------------------------- 1. Cek Huruf Vokal -------------------------
 huruf = input("Masukan 1 huruf : ") 
 huruf_vokal = "a e i o u A E I O U"
