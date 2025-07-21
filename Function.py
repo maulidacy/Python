@@ -1,4 +1,33 @@
+#--------------------------------------------------------------
+def hitung_total(harga, jumlah, diskon):
+    return harga * jumlah - (harga * jumlah * diskon / 100)
+total = hitung_total(50000, 3, 20)
+print("Total akhir:", total)
 
+#versi rapi
+def hitung_total(harga, jumlah, diskon):
+    total = harga * jumlah
+    potongan = total * diskon / 100
+    return total - potongan
+total = hitung_total(50000, 3, 20)
+print(f"Total harga setelah diskon: {total}")
+#-------------------------------------------------------------
+def nilai_tertinggi(a, b, c):
+    nilai_tertinggi = [a, b, c]
+    largest_number = max(nilai_tertinggi)
+    return largest_number
+print(nilai_tertinggi(10, 30, 20))
+
+#versi if else
+def nilai_tertinggi(a, b, c):
+    if a >= b and a >= c:
+        return a
+    elif b >= c:
+        return b
+    else:
+        return c
+print(nilai_tertinggi(10, 30, 20))
+exit()
 #-------------------------------------------------------------
 def jumlah(a, b): 
     return a + b 
