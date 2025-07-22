@@ -205,3 +205,35 @@ print(buah[0], buah[-3], buah[-1])
 print(buah[0])
 print(buah[-3])
 print(buah[-1])
+
+
+#--------------------------------
+nilai = [70, 80, 90]
+total = sum(nilai)
+rata2 = total / len(nilai)
+
+print("Total nilai:", total)
+print("Banyak data:", len(nilai))
+print("Rata-rata nilai adalah:", rata2)
+exit()
+
+# - - - - - - - - - - - - - - - - - - - 
+angka = [7, 2, 9, 4, 1]
+angka.sort()
+print(angka)
+print(len(angka))  # untuk melihat jumlah elemen
+
+
+# - - - - - - - - - - - - - - - - - - - 
+belanja = []
+belanja.extend(["sepatu", "tas", "baju"])
+print(belanja)
+
+#pakai append (append hanya bisa satu item)
+belanja.append("sepatu")
+belanja.append("tas")
+belanja.append("baju")
+
+# - - - - - - - - - - - - - - - - - - - 
+buah = ["apel", "semangka", "kelengkeng", "anggur", "kiwi"] 
+print(buah[2]) 
