@@ -237,3 +237,46 @@ belanja.append("baju")
 # - - - - - - - - - - - - - - - - - - - 
 buah = ["apel", "semangka", "kelengkeng", "anggur", "kiwi"] 
 print(buah[2]) 
+
+#-------------------------------------------
+buah = ["apel", "jeruk", "mangga", "pisang"]
+del buah[1]     # Menghapus "jeruk"
+buah.pop()      # Menghapus item terakhir, yaitu "pisang"
+print(buah)     # Hasil: ['apel', 'mangga']
+exit() 
+
+#--------------------Cek Angka 4 muncul berapa kali----------------
+angka = [2, 4, 4, 5, 6, 4, 7] 
+
+print(angka.count(4))
+
+
+exit()
+#--------------------Cek Anggota List-----------------
+menu = ["nasi goreng", "mie ayam", "soto", "bakso"] 
+
+print("sate" in menu)
+print("mie ayam" in menu)
+exit() 
+
+#-------------------------------------
+nilai = [80, 65, 90, 70, 85] 
+
+nilai.sort()  # Mengurutkan dari kecil ke besar
+print("Nilai yang sudah diurutkan: ", nilai) 
+
+nilai.reverse()  # Membalik urutan jadi dari besar ke kecil
+print("Nilai dari terbesar ke terkecil: ", nilai)
+exit() 
+
+#-------------------------------------
+barang = ["buku", "pulpen", "penggaris", "penghapus", "pensil"] 
+
+print(barang[0], barang[2], barang[4])
+exit() 
+
+#-------------------------------------
+belanja = []
+belanja.extend(["beras", "gula", "minyak"])
+print(belanja) 
+exit()
