@@ -1,5 +1,35 @@
+#-------------------------------------------------------------------------------
+belanja = ["susu", "roti", "keju", "telur", "mentega"]
+total_item = 0
+belanja.append("kopi") #Tambahkan item "kopi" ke akhir list.
+belanja.remove("telur") #Jika ada "telur", hapus dari list.
+total_item = len(belanja) #Hitung total item yang tersisa.
+print("belanja", belanja, "=", total_item)
+exit()
+
+#--------------------------Hapus Buah & Cek Keberadaan--------------------------
+buah = ["apel", "pisang", "semangka", "jeruk", "mangga"]
+
+# Hapus "semangka"
+buah.remove("semangka") #jika ingin menghapus berdasarkan isi, bukan index.
+# Cek apakah "melon" ada di dalam list
+print("melon" in buah)
+# Cetak list terakhir
+print(buah)
+exit()
+#--------------------------Tambahkan Nilai & Hitung Ulang Rata-rata:--------------------------
+nilai = [85, 90, 78, 92, 88]
+
+nilai.append(95)
+jumlah_nilai = len(nilai)
+total_nilai = sum(nilai)
+rata_rata = total_nilai / jumlah_nilai
+print("Rata-rata nilai:", rata_rata)
+exit()
+
 #-----------------------Rata-rata Nilai dari List-----------------------
 nilai = [85, 90, 78, 92, 88]
+
 # Menghitung total, jumlah, dan rata-rata nilai
 jumlah_nilai = len(nilai) #menghitung jumlah elemen.
 print("Jumlah nilai:", jumlah_nilai)
