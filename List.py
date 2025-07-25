@@ -1,3 +1,20 @@
+nilai = [55, 90, 77, 65, 80, 40, 95]
+
+# List untuk menyimpan nilai siswa yang lulus
+siswa_lulus = []
+
+for n in nilai:
+    if n >= 70:
+        print("Siswa lulus:", n)
+        siswa_lulus.append(n)  # Tambahkan ke list lulus
+
+# Setelah loop selesai, hitung jumlah siswa yang lulus
+print("Jumlah siswa yang lulus:", len(siswa_lulus))
+print("Daftar nilai siswa lulus:", siswa_lulus)
+
+exit()
+
+
 #-------------------------------------------------------------------------------
 belanja = ["susu", "roti", "keju", "telur", "mentega"]
 total_item = 0
