@@ -1,3 +1,23 @@
+#-------------------------------------Filter Nilai dan Kategori----------------------
+nilai = [65, 78, 45, 90, 55, 82, 71, 39, 100, 60]
+
+jumlah_siswa_lulus = []
+jumlahsiswa_tidak_lulus = []
+
+for i in nilai:
+    if i >= 70:
+        jumlah_siswa_lulus.append(i)
+    else:
+        jumlahsiswa_tidak_lulus.append(i)   
+
+
+print("Jumlah siswa lulus: ", len(jumlah_siswa_lulus))
+print("Jumlah siswa tidak lulus: ", len(jumlahsiswa_tidak_lulus))
+print("Nilai tertinggi:", max(nilai))
+print("Nilai terendah:", min(nilai))
+exit()
+
+#----------------------------------------Cek Siswa Lulus-----------------------------
 nilai = [55, 90, 77, 65, 80, 40, 95]
 
 # List untuk menyimpan nilai siswa yang lulus
