@@ -1,3 +1,6 @@
+
+#----------------------------Filter Nilai----------------------------
+# Program untuk mencetak nilai yang lebih dari 70 dan menghitung jumlahnya
 nilai = [55, 80, 72, 90, 65, 40]
 jumlah = 0
 jumlah_data = 0
