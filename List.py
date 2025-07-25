@@ -1,4 +1,20 @@
+#-----------------------Rata-rata Nilai dari List-----------------------
+nilai = [85, 90, 78, 92, 88]
+# Menghitung total, jumlah, dan rata-rata nilai
+jumlah_nilai = len(nilai) #menghitung jumlah elemen.
+print("Jumlah nilai:", jumlah_nilai)
+total_nilai = sum(nilai) #menjumlahkan semua elemen dalam list.
+print("Total nilai:", total_nilai)
+rata_rata = total_nilai / jumlah_nilai
+print("Rata-rata nilai:", rata_rata)
+exit()
 
+#------------------------Gabungkan Dua List------------------------
+list_1 = ["apel", "jeruk", "mangga"]
+list_2 = ["nanas", "semangka"]
+list_1.extend(list_2) 
+print(list_1)
+exit()
 #----------------------------Filter Nilai----------------------------
 # Program untuk mencetak nilai yang lebih dari 70 dan menghitung jumlahnya
 nilai = [55, 80, 72, 90, 65, 40]
