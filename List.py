@@ -1,3 +1,17 @@
+##------------------------Cek Kehadiran Barang------------------------
+barang = ["buku", "penghapus", "pensil", "penggaris", "spidol"] 
+print("pulpen" in barang) 
+barang.append("pulpen")
+print(barang)
+exit()
+
+#--------------------------Tambah, Hapus, dan Cetak List----------------------------------
+belanja = ["roti", "telur", "keju"]
+belanja.append("susu") # Menambahkan item baru (susu)
+del belanja[1]  # Menghapus item kedua (telur)
+print(belanja)
+exit()
+
 #------------------------Membalik Kata dalam List------------------------
 kata = ["apel", "pisang", "mangga"]
 kata_terbalik = kata[::-1]
@@ -205,3 +219,78 @@ print(buah[0], buah[-3], buah[-1])
 print(buah[0])
 print(buah[-3])
 print(buah[-1])
+
+
+#--------------------------------
+nilai = [70, 80, 90]
+total = sum(nilai)
+rata2 = total / len(nilai)
+
+print("Total nilai:", total)
+print("Banyak data:", len(nilai))
+print("Rata-rata nilai adalah:", rata2)
+exit()
+
+# --------------------------------
+angka = [7, 2, 9, 4, 1]
+angka.sort()
+print(angka)
+print(len(angka))  # untuk melihat jumlah elemen
+exit()
+
+#--------------------------------
+belanja = []
+belanja.extend(["sepatu", "tas", "baju"])
+print(belanja)
+
+#pakai append (append hanya bisa satu item)
+belanja.append("sepatu")
+belanja.append("tas")
+belanja.append("baju")
+
+# - - - - - - - - - - - - - - - - - - - 
+buah = ["apel", "semangka", "kelengkeng", "anggur", "kiwi"] 
+print(buah[2]) 
+
+#-------------------------------------------
+buah = ["apel", "jeruk", "mangga", "pisang"]
+del buah[1]# Menghapus "jeruk"
+buah.pop()# Menghapus item terakhir, yaitu "pisang"
+print(buah)# Hasil: ['apel', 'mangga']
+exit() 
+
+#--------------------Cek Angka 4 muncul berapa kali----------------
+angka = [2, 4, 4, 5, 6, 4, 7] 
+
+print(angka.count(4))
+
+
+exit()
+#--------------------Cek Anggota List-----------------
+menu = ["nasi goreng", "mie ayam", "soto", "bakso"] 
+
+print("sate" in menu)
+print("mie ayam" in menu)
+exit() 
+
+#-------------------------------------
+nilai = [80, 65, 90, 70, 85] 
+
+nilai.sort()# Mengurutkan dari kecil ke besar
+print("Nilai yang sudah diurutkan: ", nilai) 
+
+nilai.reverse()# Membalik urutan jadi dari besar ke kecil
+print("Nilai dari terbesar ke terkecil: ", nilai)
+exit() 
+
+#-------------------------------------
+barang = ["buku", "pulpen", "penggaris", "penghapus", "pensil"] 
+
+print(barang[0], barang[2], barang[4])
+exit() 
+
+#-------------------------------------
+belanja = []
+belanja.extend(["beras", "gula", "minyak"])
+print(belanja) 
+exit()
