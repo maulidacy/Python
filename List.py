@@ -1,4 +1,16 @@
-##------------------------Cek Kehadiran Barang------------------------
+nilai = [55, 80, 72, 90, 65, 40]
+jumlah = 0
+jumlah_data = 0
+
+for n in nilai:
+    if n > 70:
+        print(n)        # Cetak nilai yang lebih dari 70
+        jumlah_data += 1  # Tambah hitungannya
+
+print("Jumlah nilai di atas 70:", jumlah_data)
+exit()
+
+#------------------------Cek Kehadiran Barang------------------------
 barang = ["buku", "penghapus", "pensil", "penggaris", "spidol"] 
 print("pulpen" in barang) 
 barang.append("pulpen")
@@ -231,7 +243,7 @@ print("Banyak data:", len(nilai))
 print("Rata-rata nilai adalah:", rata2)
 exit()
 
-# --------------------------------
+#------------------------Mengurutkan dan Menghitung Elemen dalam List------------------------
 angka = [7, 2, 9, 4, 1]
 angka.sort()
 print(angka)
@@ -257,6 +269,11 @@ buah = ["apel", "jeruk", "mangga", "pisang"]
 del buah[1]# Menghapus "jeruk"
 buah.pop()# Menghapus item terakhir, yaitu "pisang"
 print(buah)# Hasil: ['apel', 'mangga']
+
+#-------------------------------------------
+del buah[1]# Menghapus "jeruk"
+buah.pop()# Menghapus item terakhir, yaitu "pisang"
+print(buah)# Hasil: ['apel', 'mangga']
 exit() 
 
 #--------------------Cek Angka 4 muncul berapa kali----------------
@@ -274,8 +291,12 @@ print("mie ayam" in menu)
 exit() 
 
 #-------------------------------------
-nilai = [80, 65, 90, 70, 85] 
+nilai = [80, 65, 90, 70, 85]
 
+nilai.sort()# Mengurutkan dari kecil ke besar
+print("Nilai yang sudah diurutkan: ", nilai) 
+
+nilai.reverse()# Membalik urutan jadi dari besar ke kecil
 nilai.sort()# Mengurutkan dari kecil ke besar
 print("Nilai yang sudah diurutkan: ", nilai) 
 
