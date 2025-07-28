@@ -1,3 +1,15 @@
+#------------------------Menghitung Total dan Rata-rata List------------------------
+bilangan = [1, 2, 3]
+
+jumlah_nilai = len(bilangan)
+total_nilai = sum(bilangan)
+rata_rata = total_nilai / jumlah_nilai
+
+print("Bilangan saat ini: ", bilangan)
+print("Jumlah bilangan:", jumlah_nilai)
+print("Total bilangan:", total_nilai)
+print("Rata-rata nilai:", rata_rata)
+exit()
 #------------------------Menampilkan Bilangan Genap dalam List------------------------
 bilangan = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
