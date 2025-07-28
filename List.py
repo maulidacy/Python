@@ -1,3 +1,12 @@
+#------------------------Menyusun List dari Input Pengguna------------------------
+stok = ["sandal", "sepatu", "tas", "topi"]
+
+print("\nStok saat ini: ", stok)
+input_stok = input("Masukkan nama barang: ")
+stok.append(input_stok)
+
+print("Update stok: ", stok)
+exit()
 #------------------------Tambah, Hapus, dan Cetak List------------------------
 daftar_belanja = ["apel", "semangka", "anggur"]
 
