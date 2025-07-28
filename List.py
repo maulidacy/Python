@@ -1,3 +1,13 @@
+#------------------------Tambah, Hapus, dan Cetak List------------------------
+daftar_belanja = ["apel", "semangka", "anggur"]
+
+daftar_belanja.append("kiwi")
+print(daftar_belanja)
+
+daftar_belanja.remove("anggur")
+print(daftar_belanja)
+exit()
+
 #-------------------------------------Filter Nilai dan Kategori----------------------
 nilai = [65, 78, 45, 90, 55, 82, 71, 39, 100, 60]
 
