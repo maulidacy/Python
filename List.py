@@ -1,3 +1,4 @@
+
 #------------------------Menghitung Total dan Rata-rata List------------------------
 bilangan = [1, 2, 3]
 
@@ -8,7 +9,7 @@ rata_rata = total_nilai / jumlah_nilai
 print("Bilangan saat ini: ", bilangan)
 print("Jumlah bilangan:", jumlah_nilai)
 print("Total bilangan:", total_nilai)
-print("Rata-rata nilai:", rata_rata)
+print("Rata-rata nilai:", round(rata_rata, 2)) #round() jika ingin rata-rata dibatasi ke 2 desimal
 exit()
 #------------------------Menampilkan Bilangan Genap dalam List------------------------
 bilangan = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
@@ -33,8 +34,9 @@ daftar_belanja = ["apel", "semangka", "anggur"]
 daftar_belanja.append("kiwi")
 print(daftar_belanja)
 
-daftar_belanja.remove("anggur")
-print(daftar_belanja)
+if "anggur" in daftar_belanja: #Jika ingin menghindari error saat menghapus item yang tidak ada
+    daftar_belanja.remove("anggur")
+    print(daftar_belanja)
 exit()
 
 #-------------------------------------Filter Nilai dan Kategori----------------------
