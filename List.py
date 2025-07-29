@@ -1,4 +1,12 @@
+#------------------------Mencari Nilai Tertinggi dalam List------------------------
+nilai = [85, 90, 78, 92, 88, 100]
 
+def cek_nilai(nilai):
+    return max(nilai)
+    #tertinggi = max(nilai)
+    #return tertinggi
+print(cek_nilai(nilai))
+exit()
 
 #------------------------Menghitung Total dan Rata-rata List------------------------
 bilangan = [1, 2, 3]
