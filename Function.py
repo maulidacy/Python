@@ -1,6 +1,25 @@
 # Gunakan return jika ingin menggunakan kembali hasil dari fungsi itu (misalnya disimpan, dicetak, dibandingkan, dsb).
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 
+#------------------------Menghitung Total Harga Barang------------------------
+# Input dari pengguna
+nama_barang = input("Masukkan nama barang: ")
+harga_barang = float(input("Masukkan harga barang (dalam angka): "))
+jumlah_barang = int(input("Masukkan jumlah barang: "))
+
+# Fungsi untuk menghitung total harga
+def hitung_total(harga, jumlah):
+    return harga * jumlah
+
+# Pemanggilan fungsi
+total_harga = hitung_total(harga_barang, jumlah_barang)
+
+# Output hasil
+print("\n============ Daftar belanja ============")
+print("Barang:", nama_barang)
+print("Total harga:", total_harga)
+print("============= Terima kasih =============")
+exit()
 
 #--------------------------------------------------------------
 angka = input("Masukkan angka: ")
