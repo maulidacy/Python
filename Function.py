@@ -12,7 +12,7 @@ def hitung_total(harga, jumlah):
     return harga * jumlah
 
 # Pemanggilan fungsi
-total_harga = hitung_total(harga_barang, jumlah_barang)
+total_harga = hitung_total(harga_barang, jumlah_barang) # Variabel total_harga digunakan untuk menyimpan hasil dari fungsi
 
 # Output hasil
 print("\n============ Daftar belanja ============")
