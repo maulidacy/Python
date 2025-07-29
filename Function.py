@@ -1,3 +1,18 @@
+# Gunakan return jika ingin menggunakan kembali hasil dari fungsi itu (misalnya disimpan, dicetak, dibandingkan, dsb).
+# Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
+
+
+#--------------------------------------------------------------
+angka = input("Masukkan angka: ")
+def cek_genap(angka):
+    if angka % 2 == 0:
+        return True
+    else:
+        return False
+hasil = cek_genap(int(angka))
+print(hasil) 
+exit()
+
 #--------------------------------------------------------------
 def hitung_total(harga, jumlah, diskon):
     return harga * jumlah - (harga * jumlah * diskon / 100)

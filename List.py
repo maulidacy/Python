@@ -1,4 +1,5 @@
 
+
 #------------------------Menghitung Total dan Rata-rata List------------------------
 bilangan = [1, 2, 3]
 
