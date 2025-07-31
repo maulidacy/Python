@@ -1,3 +1,11 @@
+#------------------------Menampilkan Jumlah Huruf dalam List (Tanpa Fungsi)------------------------
+produk = ["baju", "celana", "jaket", "topi"]
+
+for item in produk:
+    print(f"{item} ({len(item)} huruf)")
+
+exit()
+
 #------------------------Ubah Isi List------------------------
 barang = ["roti", "susu", "kopi", "teh"]
 
