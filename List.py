@@ -1,3 +1,9 @@
+#------------------------Hitung Barang Tertentu-------------------------
+pembelian = ["apel", "jeruk", "apel", "anggur", "jeruk", "apel"]
+jumlah_apel = pembelian.count("apel") #count() menghitung berapa kali suatu elemen tertentu muncul dalam list
+print(f"Jumlah apel yang dibeli: {jumlah_apel}")
+exit()
+
 #------------------------ List Bersarang (2 Dimensi)------------------------
 barang_dan_harga = [
     ["buku", 15000],
