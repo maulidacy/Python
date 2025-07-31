@@ -1,4 +1,4 @@
-#------------------------Mengganti item dalam List------------------------
+#------------------------Ubah Isi List------------------------
 barang = ["roti", "susu", "kopi", "teh"]
 
 print("List awal: ", barang)
