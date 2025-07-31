@@ -1,4 +1,10 @@
+#------------------------Mengganti item dalam List------------------------
+barang = ["roti", "susu", "kopi", "teh"]
 
+print("List awal: ", barang)
+barang[2] = "kopi hitam"
+print("List setelah diganti: ", barang)
+exit()
 
 #------------------------Mencari Nilai Tertinggi dalam List------------------------
 nilai = [85, 90, 78, 92, 88, 100]
