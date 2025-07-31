@@ -1,3 +1,21 @@
+#------------------------ List Bersarang (2 Dimensi)------------------------
+barang_dan_harga = [
+    ["buku", 15000],
+    ["pulpen", 5000],
+    ["penghapus", 3000]
+]
+
+subtotal = 0
+
+for barang in barang_dan_harga:
+    nama = barang[0]
+    harga = barang[1]
+    print(f"Nama barang: {nama}, Harga barang: Rp. {harga}")
+    subtotal += harga
+
+print(f"Subtotal: Rp. {subtotal}")
+exit()
+
 #------------------------Menampilkan Jumlah Huruf dalam List (Tanpa Fungsi)------------------------
 produk = ["baju", "celana", "jaket", "topi"]
 
