@@ -1,3 +1,10 @@
+#------------------------Cetak list dengan loop------------------------
+buah = ["apel", "pisang", "jeruk"]
+
+for i in buah:
+    print(i)
+exit()
+
 #------------------------Menyusun List dari Input Pengguna------------------------
 keranjang = []
 
