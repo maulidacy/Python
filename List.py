@@ -1,3 +1,13 @@
+#------------------------Menyusun List dari Input Pengguna------------------------
+keranjang = []
+
+while len(keranjang) < 3:
+    stok = input(f"Masukkan nama barang ke-{len(keranjang) + 1}: ")
+    keranjang.append(stok)
+
+print("\nDaftar barang di keranjang:", keranjang)
+exit()
+
 #------------------------Hitung Barang Tertentu-------------------------
 pembelian = ["apel", "jeruk", "apel", "anggur", "jeruk", "apel"]
 jumlah_apel = pembelian.count("apel") #count() menghitung berapa kali suatu elemen tertentu muncul dalam list
