@@ -1,3 +1,12 @@
+#------------------------Hanya Cetak yang Panjangnya > 5------------------------
+buah = ["apel", "pisang", "jeruk", "semangka", "kiwi", "melon", "jambu", "mangga"]
+
+for i in buah:
+    panjang = len(i)
+    if panjang > 5:
+        print(f"{i} ({panjang} huruf)")
+exit()
+
 #------------------------Cetak Jumlah Huruf dalam List------------------------
 buah = ["apel", "pisang", "jeruk"]
 
