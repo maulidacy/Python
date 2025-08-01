@@ -1,3 +1,10 @@
+#------------------------Cetak Jumlah Huruf dalam List------------------------
+buah = ["apel", "pisang", "jeruk"]
+
+for i in buah:
+    print(f"{i} ({len(i)} huruf)")
+exit()
+
 #------------------------Cetak list dengan loop------------------------
 buah = ["apel", "pisang", "jeruk"]
 
