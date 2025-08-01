@@ -1,3 +1,18 @@
+#------------------------Ganti Semua Elemen Jadi Huruf Kapital------------------------
+kata = ["satu", "dua", "tiga"]
+
+#kata_kapital = [kata[0].upper(), kata[1].upper(), kata[2].upper()]
+#print(kata_kapital)
+
+#list comprehension
+#kata = ["satu", "dua", "tiga"]
+#kata_kapital = [i.upper() for i in kata]
+#print(kata_kapital)
+
+for i in kata:
+    print(i.upper())
+exit()
+
 #------------------------Hanya Cetak yang Panjangnya > 5------------------------
 buah = ["apel", "pisang", "jeruk", "semangka", "kiwi", "melon", "jambu", "mangga"]
 
