@@ -1,3 +1,14 @@
+#------------------------Menghitung Jumlah Bilangan Ganjil dalam List------------------------
+angka = [2, 5, 7, 8, 10, 13, 15]
+jumlah = 0
+
+for i in angka:
+    if i % 2 != 0:
+       #print(f"{i} adalah bilangan ganjil")
+       jumlah += 1
+print(jumlah)
+exit()
+
 #------------------------Ganti Semua Elemen Jadi Huruf Kapital------------------------
 kata = ["satu", "dua", "tiga"]
 
