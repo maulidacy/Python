@@ -1,3 +1,18 @@
+#------------------------Jumlahkan Semua Angka Genap------------------------
+angka = [3, 6, 9, 12, 15, 18]
+angka_genap = []
+
+for i in angka:
+    if i % 2 == 0:
+        angka_genap.append(i)
+
+# Gabungkan angka dengan tanda +
+hasil_tampilan = " + ".join(str(i) for i in angka_genap) # Menggunakan list comprehension
+jumlah_genap = sum(angka_genap)
+
+print(f"{hasil_tampilan} = {jumlah_genap}")
+exit()
+
 #------------------------Menghitung Jumlah Bilangan Ganjil dalam List------------------------
 angka = [2, 5, 7, 8, 10, 13, 15]
 jumlah = 0
