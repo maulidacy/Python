@@ -1,3 +1,18 @@
+#-------------------------------Filter Nama Pendek-------------------------------
+nama = ["Ayu", "Budi", "Putri", "Dian", "Salman", "Rian"]
+new_nama = []
+
+for i in nama:
+    panjang = len(i)
+    if panjang < 5:
+        new_nama.append(i)
+print(new_nama)
+
+#Versi List Comprehension
+new_nama_com = [i for i in nama if len(i) < 5]
+print(new_nama_com)
+exit()
+
 #-------------------------------Ganda Tiga atau Ganjil-------------------------------
 angka = list(range(1, 21))
 hasil = []
