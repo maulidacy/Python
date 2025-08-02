@@ -7,7 +7,13 @@ for i in angka:
         hasil.append("Fizz")
     elif i % 2 != 0:
         hasil.append("Ganjil")
-print(hasil)
+print("\nList biasa: ", hasil)
+
+#Versi List Comprehension
+hasil = ["Fizz" if i % 3 == 0 else "Ganjil"
+         for i in angka if i % 3 == 0 or i % 2 != 0]
+print("\nList Comprehension: ", hasil)
+
 exit()
 
 #------------------------------Kuadrat List-----------------------------
