@@ -1,3 +1,9 @@
+#-------------------------------Huruf Kapital-------------------------------
+buah = ["apel", "jeruk", "nanas", "mangga"]
+buah_capital = [i.upper() for i in buah]
+print(buah_capital)
+exit()
+
 #-------------------------------Filter Nama Pendek-------------------------------
 nama = ["Ayu", "Budi", "Putri", "Dian", "Salman", "Rian"]
 new_nama = []
