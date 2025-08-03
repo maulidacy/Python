@@ -1,6 +1,9 @@
 #-------------------------------Huruf Kapital-------------------------------
 buah = ["apel", "jeruk", "nanas", "mangga"]
-buah_capital = [i.upper() for i in buah]
+buah_capital = [f"*{i.upper()}*" for i in buah] # Diapit tanda bintang
+
+# versi tanpa f-string
+# buah_capital = ["*" + i.upper() + "*" for i in buah]
 print(buah_capital)
 exit()
 
