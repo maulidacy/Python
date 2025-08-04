@@ -1,4 +1,13 @@
 #-----------------------------------------------------------------
+while True:
+    try:
+        number = int(input("Enter a number: "))
+        break
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+exit()
+
+#-----------------------------------------------------------------
 try:
     numerator = int(input("Enter the numerator: ")) #pembilang
     denominator = int(input("Enter the denominator: ")) #penyebut
