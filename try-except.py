@@ -1,16 +1,16 @@
 #-----------------------------------------------------------------
 try:
-    pembilang = int(input("Masukkan pembilang: "))
-    penyebut = int(input("Masukkan penyebut: "))
-    hasil = pembilang / penyebut
-    print(f"Hasil pembagian: {hasil}")
+    numerator = int(input("Enter the numerator: ")) #pembilang
+    denominator = int(input("Enter the denominator: ")) #penyebut
+    results = numerator / denominator
+    print(f"Division results: {results}") #pembagian
 except ZeroDivisionError:
-    print("Penyebut tidak boleh nol!")
+    print("The denominator cannot be zero!")
 exit()
 
 #-----------------------------------------------------------------
 try:
-    angka = int(input("Masukkan angka: "))
+    number = int(input("Enter a number: "))
 except ValueError:
-    print("Input harus berupa angka!")
+    print("Invalid input. Please enter a valid number.")
 #-----------------------------------------------------------------
