@@ -1,4 +1,19 @@
-#---------------------------------------------------------------
+#-----------------------------------------------------------------
+list_of_numbers = [10, 20, 30, 40, 50] 
+
+try:
+    index = input("Enter index: ")
+    if index == list_of_numbers:
+        print(f"Data in index {index} is {list_of_numbers[int(index)]}")
+    else:
+        print(f"Data in index {index} is {list_of_numbers[int(index)]}")
+except ValueError:
+    print("Enter the number!")
+except IndexError:
+    print("Index not found!")
+exit()
+
+#-----------------------------------------------------------------
 print("What is the result of 10 divided by the number you chose?") #Berapakah hasil 10 dibagi dengan angka yang kamu pilih?
 
 try:
