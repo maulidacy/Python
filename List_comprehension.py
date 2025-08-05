@@ -1,3 +1,21 @@
+#-------------------------------Angka Berlabel-------------------------------
+angka = list(range(1, 11))
+hasil = [f"genap-{i}" if i% 2 == 0 else f"ganjil-{i}" for i in angka]
+print(hasil)
+
+#versi loop biasa
+angka = list(range(1, 11))
+hasil = []
+
+for i in angka:
+    if i % 2 == 0:
+        hasil.append(f"genap-{i}")
+    else:
+        hasil.append(f"ganjil-{i}")
+
+print(hasil)
+exit()
+
 #-------------------------------Huruf Kapital-------------------------------
 buah = ["apel", "jeruk", "nanas", "mangga"]
 buah_capital = [f"*{i.upper()}*" for i in buah] # Diapit tanda bintang
