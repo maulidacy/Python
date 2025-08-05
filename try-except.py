@@ -1,3 +1,16 @@
+#---------------------------------------------------------------
+print("What is the result of 10 divided by the number you chose?") #Berapakah hasil 10 dibagi dengan angka yang kamu pilih?
+
+try:
+    divisor = int(input("Enter divisor: ")) # meminta user memasukkan angka (pembagi)
+    results = 10/divisor
+    print(f"10 : {divisor} = {results}")
+except ZeroDivisionError:
+    print("Cannot be divided by zero!") # menangani jika user memasukkan angka 0 (Tidak bisa dibagi dengan nol!)
+except ValueError:
+    print("Input must be a number!") # menangani jika user mengetik huruf (Tidak bisa dibagi dengan huruf!)
+exit()
+
 #-----------------------------------------------------------------
 while True:
     try:
