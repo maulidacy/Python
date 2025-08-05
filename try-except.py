@@ -2,11 +2,8 @@
 list_of_numbers = [10, 20, 30, 40, 50] 
 
 try:
-    index = input("Enter index: ")
-    if index == list_of_numbers:
-        print(f"Data in index {index} is {list_of_numbers[int(index)]}")
-    else:
-        print(f"Data in index {index} is {list_of_numbers[int(index)]}")
+    index = int(input("Enter index: ")) # langsung konversi ke integer
+    print(f"Data in index {index} is {list_of_numbers[index]}")
 except ValueError:
     print("Enter the number!")
 except IndexError:
