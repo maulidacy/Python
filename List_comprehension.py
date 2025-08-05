@@ -5,6 +5,14 @@ warna = ["merah", "kuning", "oranye"]
 # b ambil dari list buah, w ambil dari list warna
 combined = [f"{b} berwarna {w}" for b, w in zip(buah, warna)] #zip menggabungkan dua buah list
 print(combined)
+
+#versi loop biasa
+combined = []
+
+for b, w in zip(buah, warna):
+    combined.append(f"{b} berwarna {w}")
+
+print(combined)
 exit()
 
 #-------------------------------Angka Berlabel-------------------------------
