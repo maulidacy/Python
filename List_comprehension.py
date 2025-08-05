@@ -1,3 +1,12 @@
+#-------------------------------Kombinasi Dua List-------------------------------
+buah = ["apel", "pisang", "mangga"]
+warna = ["merah", "kuning", "oranye"]
+
+# b ambil dari list buah, w ambil dari list warna
+combined = [f"{b} berwarna {w}" for b, w in zip(buah, warna)] #zip menggabungkan dua buah list
+print(combined)
+exit()
+
 #-------------------------------Angka Berlabel-------------------------------
 angka = list(range(1, 11))
 hasil = [f"genap-{i}" if i% 2 == 0 else f"ganjil-{i}" for i in angka]
