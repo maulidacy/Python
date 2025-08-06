@@ -1,6 +1,12 @@
+#-------------------------------Angka Genap--------------------------------------
+angka = [1, 2, 3, 4, 5, 6, 7, 8]
+genap = [i for i in angka if i % 2 == 0]
+print(genap)
+exit()
+
 #-------------------------------Kuadrat List-------------------------------------
-angka = [i**2 for i in range(1, 11)]
-print(angka)
+kuadrat_list = [i**2 for i in range(1, 11)]
+print(kuadrat_list)
 exit()
 
 #-------------------------------Kombinasi Dua List-------------------------------
