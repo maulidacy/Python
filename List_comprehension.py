@@ -1,3 +1,9 @@
+#-------------------------------Huruf Kapital------------------------------------
+nama_buah = ["apel", "pisang", "mangga"]
+huruf_kapital = [i.upper() for i in nama_buah]
+print(huruf_kapital)
+exit()
+
 #-------------------------------Angka Genap--------------------------------------
 angka = [1, 2, 3, 4, 5, 6, 7, 8]
 genap = [i for i in angka if i % 2 == 0]
