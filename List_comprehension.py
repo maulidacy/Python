@@ -1,3 +1,8 @@
+#-------------------------------Kuadrat List-------------------------------------
+angka = [i**2 for i in range(1, 11)]
+print(angka)
+exit()
+
 #-------------------------------Kombinasi Dua List-------------------------------
 buah = ["apel", "pisang", "mangga"]
 warna = ["merah", "kuning", "oranye"]
