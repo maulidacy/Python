@@ -1,3 +1,9 @@
+#-------------------------------Ganjil Genap-------------------------------------
+angka = range(1, 21)
+hasil = [f"Genap-{i}" if i % 2 == 0 else f"Ganjil-{i}" for i in angka]
+print(hasil)
+exit()
+
 #-------------------------------Huruf Kapital------------------------------------
 nama_buah = ["apel", "pisang", "mangga"]
 huruf_kapital = [i.upper() for i in nama_buah]
