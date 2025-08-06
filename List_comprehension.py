@@ -1,3 +1,8 @@
+#-------------------------------Ambil hanya angka yang lebih dari 50-----------------------------
+hasil = [i for i in [12, 45, 23, 67, 90, 34] if i > 50]
+print(hasil)
+exit()
+
 #-------------------------------Ganjil Genap-------------------------------------
 angka = range(1, 21)
 hasil = [f"Genap-{i}" if i % 2 == 0 else f"Ganjil-{i}" for i in angka]
