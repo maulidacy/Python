@@ -1,3 +1,11 @@
+#-------------------------------Normalisasi Skor-------------------------------------------------
+skor = [60, 70, 90, 100, 85]
+
+skor_normalisasi = [s / 100 for s in skor]
+
+print(skor_normalisasi)
+exit()
+
 #-------------------------------Jumlahkan Semua Harga Barang-------------------------------------
 daftar_barang = [("apel", 10000), ("jeruk", 15000), ("pisang", 20000), ("mangga", 25000)]
 total = 0
