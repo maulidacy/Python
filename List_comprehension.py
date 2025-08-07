@@ -14,6 +14,7 @@ print(harga_bersih)
 data_cleaning = [i for i in harga if i is not None] #Bayangkan: "Saya ingin membuat list baru berisi i, dari harga, jika i bukan None."
 print(data_cleaning)
 exit()
+
 #-------------------------------Menentukan suhu panas dan sejuk----------------------------------
 suhu = [30, 28, 33, 35, 31, 29, 36]
 
