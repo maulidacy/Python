@@ -1,3 +1,19 @@
+#-------------------------------Data Cleaning Sederhana------------------------------------------
+harga = [10000, None, 15000, 20000, None, 18000]
+
+# Gunakan list baru untuk menyimpan data yang sudah dibersihkan
+harga_bersih = []
+
+for i in harga:
+    if i is not None:
+        harga_bersih.append(i) #Kenapa tidak pakai harga.remove(i) dalam loop? Karena remove() mengubah list saat sedang diiterasi, yang bisa menyebabkan elemen terlewat. 
+
+print(harga_bersih)
+
+#versi list comprehension
+data_cleaning = [i for i in harga if i is not None] #Bayangkan: "Saya ingin membuat list baru berisi i, dari harga, jika i bukan None."
+print(data_cleaning)
+exit()
 #-------------------------------Menentukan suhu panas dan sejuk----------------------------------
 suhu = [30, 28, 33, 35, 31, 29, 36]
 
