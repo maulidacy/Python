@@ -1,3 +1,15 @@
+#-------------------------------Jumlahkan Semua Harga Barang-------------------------------------
+daftar_barang = [("apel", 10000), ("jeruk", 15000), ("pisang", 20000), ("mangga", 25000)]
+total = 0
+for barang in daftar_barang:
+    total += barang[1]
+print(total)
+
+#versi list comprehension
+total = sum([harga for nama, harga in daftar_barang])
+print(total)
+exit()
+
 #-------------------------------Ambil hanya angka yang lebih dari 50-----------------------------
 hasil = [i for i in [12, 45, 23, 67, 90, 34] if i > 50]
 print(hasil)
