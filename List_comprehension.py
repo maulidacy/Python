@@ -1,3 +1,9 @@
+#-------------------------------Menentukan suhu panas dan sejuk----------------------------------
+suhu = [30, 28, 33, 35, 31, 29, 36]
+
+label_suhu = ["Panas" if s > 32 else "Sejuk" for s in suhu] #s = suhu (variable)
+print(label_suhu)
+exit()
 #-------------------------------Normalisasi Skor-------------------------------------------------
 skor = [60, 70, 90, 100, 85]
 
