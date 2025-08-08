@@ -1,3 +1,26 @@
+#-----------------------------4. Manajemen List Hewan-----------------------------
+nama_hewan = ["Kambing", "Ikan", "Kelinci", "Ayam", "Burung"]
+
+print(f"Daftar hewan awal: {nama_hewan}, jumlah: {len(nama_hewan)}")
+
+# Tambah hewan
+tambah_hewan = input("Masukkan nama hewan: ")
+nama_hewan.append(tambah_hewan)
+print(f"Setelah ditambah: {nama_hewan}, jumlah: {len(nama_hewan)}")
+
+# Hapus hewan (dengan pengecekan)
+nama_hapus = input("Masukkan nama hewan yang ingin dihapus: ")
+if nama_hapus in nama_hewan:
+    nama_hewan.remove(nama_hapus)
+    print(f"Setelah dihapus: {nama_hewan}, jumlah: {len(nama_hewan)}")
+else:
+    print(f"Hewan '{nama_hapus}' tidak ada di daftar!")
+
+# Urutkan
+nama_hewan.sort()
+print(f"Setelah diurutkan: {nama_hewan}, jumlah: {len(nama_hewan)}")
+exit()
+
 #-----------------------------3. Manipulasi list-----------------------------
 daftar_makanan = ["nasi goreng", "pizza", "ayam goreng", "soto", "sate"]
 
