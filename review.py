@@ -30,13 +30,13 @@ rata_rata = sum(angka_list) / len(angka_list)
 print(f"Rata-rata: {rata_rata:.2f}")
 exit()
 #-----------------------------1. Menghitung Umur-----------------------------
-from datetime import datetime
+from datetime import datetime # ambil class datetime dari modul datetime
 
 nama = input("Nama: ")
 
 try:
     tahun_lahir = int(input("Tahun lahir: "))
-    tahun_sekarang = datetime.now().year
+    tahun_sekarang = datetime.now().year # mengambil hanya tahun
     umur = tahun_sekarang - tahun_lahir
     print(f"Halo {nama}, umurmu sekitar {umur} tahun.")
 except ValueError:
