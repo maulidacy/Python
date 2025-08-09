@@ -1,3 +1,83 @@
+#--------------------------------------Manajemen Stok Barang----------------------------------------
+stok_barang = [
+    ["Sepatu", 10, 500000],
+    ["Baju", 20, 100000],
+    ["Celana", 5, 150000],
+    ["Kaos", 15, 75000],
+    ["Topi", 8, 50000]
+]
+
+print("\n==================================")
+print("Daftar barang di gudang saat ini:")
+print("==================================")
+for barang in stok_barang:
+    print(f"{barang[0]} - Jumlah: {barang[1]} - Harga: {barang[2]}")
+
+def tambah_barang(stok_barang):
+    try:
+        print("\n==================================")
+        print("Tambah barang:")
+        print("==================================")
+        nama_barang = input("Masukkan nama barang: ")
+        jumlah_barang = int(input("Masukkan jumlah barang: "))
+        harga_barang = int(input("Masukkan harga barang: "))
+        stok_barang.append([nama_barang, jumlah_barang, harga_barang])
+    except ValueError:
+        print("Input tidak valid. Mohon masukkan angka.")
+    return stok_barang
+
+
+def hapus_barang():
+    print("\n==================================")
+    print("Hapus barang:")
+    print("==================================")
+    nama_barang = input("Masukkan nama barang: ")
+    # Cari index barang
+    index_hapus = None
+    for i, barang in enumerate(stok_barang):
+        if barang[0].lower() == nama_barang.lower():  # bandingkan nama (case-insensitive)
+            index_hapus = i
+            break
+
+    if index_hapus is not None:
+        stok_barang.pop(index_hapus)
+    else:
+        print("Barang tidak ditemukan di gudang.")
+    return index_hapus
+
+#-----------------------------------------------------------------------------------
+# lower() di Python dipakai untuk mengubah semua huruf di string menjadi huruf kecil
+# Kenapa .pop() bukan .remove()?
+# .remove() → harus kasih elemen list yang sama persis.
+# .pop(index) → menghapus berdasarkan posisi/index di list.
+#-----------------------------------------------------------------------------------
+
+#urutkan
+def urutkan_barang():
+    stok_barang.sort(key=lambda x: x[0])
+    return stok_barang
+
+def tampilkan_barang():
+    print("\n==================================")
+    print("Daftar barang di gudang saat ini:")
+    print("==================================")
+    for barang in stok_barang:
+        print(f"{barang[0]} - Jumlah: {barang[1]} - Harga: {barang[2]}")
+    return stok_barang
+
+# Memanggil fungsi tambah barang
+stok_barang = tambah_barang(stok_barang)
+
+# Memanggil fungsi hapus barang
+hapus_barang()
+
+# Memanggil fungsi urutkan barang
+urutkan_barang()
+
+# Memanggil fungsi tampilkan barang
+tampilkan_barang()
+exit()
+
 #--------------------------------------Menghitung Total Pendapatan----------------------------------------
 produk = [
     ["Sepatu", 600000, 10],
