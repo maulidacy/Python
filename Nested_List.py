@@ -65,6 +65,16 @@ def tampilkan_barang():
         print(f"{barang[0]} - Jumlah: {barang[1]} - Harga: {barang[2]}")
     return stok_barang
 
+#hitung jumlah item tertentu
+cari = input("Masukkan nama barang yang ingin dicek jumlahnya: ")
+for barang in stok_barang:
+    if barang[0].lower() == cari.lower():  # cocokkan nama tanpa peduli huruf besar/kecil
+        print(f"Jumlah {barang[0]}: {barang[1]}")
+        break
+else:
+    print("Barang tidak ditemukan.")
+    
+
 # Memanggil fungsi tambah barang
 stok_barang = tambah_barang(stok_barang)
 
