@@ -1,6 +1,18 @@
 # Gunakan return jika ingin menggunakan kembali hasil dari fungsi itu (misalnya disimpan, dicetak, dibandingkan, dsb).
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 
+#------------------------Fungsi tanpa Parameter-------------------------------
+def tampilkan_menu():
+    print("======Daftar Menu=======")
+    print("1. Nasi")
+    print("2. Ayam")
+    print("3. Sambala sambalado")
+    print("4. Telor Ceplok")
+    print("========================")
+
+tampilkan_menu()
+exit()
+
 #------------------------Hitung Rata-Rata-------------------------------------
 def hitung_rata(nilai):
     return sum(nilai) / len(nilai)
