@@ -1,6 +1,13 @@
 # Gunakan return jika ingin menggunakan kembali hasil dari fungsi itu (misalnya disimpan, dicetak, dibandingkan, dsb).
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 
+#------------------------Hitung Rata-Rata-------------------------------------
+def hitung_rata(nilai):
+    return sum(nilai) / len(nilai)
+
+print("Hasil: ", hitung_rata([1, 2, 3, 4, 5]))
+exit()
+
 #------------------------Menghitung Total Harga Barang------------------------
 # Input dari pengguna
 nama_barang = input("Masukkan nama barang: ")
