@@ -1,6 +1,13 @@
 # Gunakan return jika ingin menggunakan kembali hasil dari fungsi itu (misalnya disimpan, dicetak, dibandingkan, dsb).
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 
+
+def tampilkan_salam():
+    print("Halo, selamat datang di Python")
+
+tampilkan_salam()
+exit()
+
 #------------------------Fungsi tanpa Parameter-------------------------------
 def tampilkan_menu():
     print("======Daftar Menu=======")
