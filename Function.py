@@ -1,6 +1,34 @@
 # Gunakan return jika ingin menggunakan kembali hasil dari fungsi itu (misalnya disimpan, dicetak, dibandingkan, dsb).
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 
+#---------------------------------Kasir Sederhana------------------------------------
+nama = input("Halo, siapa nama Anda?: ")
+print(f"Halo {nama}, selamat datang di Warung Python!")
+
+def tampilkan_menu():
+    print("======Daftar Menu=======")
+    print("1. Nasi - Rp. 4000")
+    print("2. Ayam - Rp. 5000")
+    print("3. Sambala sambalado - Rp. 3000")
+    print("4. Telor ceplok - Rp. 3000")
+    print("5. Teh pait - Rp. 3000")
+    print("========================")
+tampilkan_menu()
+
+daftar_harga = [
+    ["Nasi", 4000],
+    ["Ayam", 5000],
+    ["Sambala sambalado", 3000],
+    ["Telor ceplok", 3000],
+    ["Teh pait", 3000]
+]
+
+try:
+    pilih_menu = int(input("Ketik angka untuk memilih menu (Ketik 0 untuk berhenti: "))
+except ValueError:
+    print("Enter the number!")
+    
+
 #--------------------------------- Fungsi Mengolah List--------------------------------------
 def hitung_rata(nilai_list):
     return sum (nilai_list) / len (nilai_list) # hitung rata-rata
