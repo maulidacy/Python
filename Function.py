@@ -1,28 +1,46 @@
 # Gunakan return jika ingin menggunakan kembali hasil dari fungsi itu (misalnya disimpan, dicetak, dibandingkan, dsb).
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 
-#-----------------------------------------------------------------------------
+#--------------------------------- Fungsi Mengolah List--------------------------------------
+def hitung_rata(nilai_list):
+    return sum (nilai_list) / len (nilai_list) # hitung rata-rata
+
+print("Hasil: ", hitung_rata([80, 90, 75]))
+exit()
+
+#---------------------------------Panggil fungsi ini tanpa parameter dan dengan parameter.------------------------------
+def greet(nama="User"):
+    print(f"Halo, {nama}")
+
+# Panggilan tanpa parameter → pakai default "User"
+greet()
+
+# Panggilan dengan parameter → override default
+greet("maul")
+exit()
+
+#---------------------------------Fungsi Menghitung Luas Persegi--------------------------------------------
 def hitung_persegi(sisi):
     return sisi*sisi
 
 print(hitung_persegi(5))
 exit()
 
-#-----------------------------------------------------------------------------
+#---------------------------------Fungsi dengan Parameter Biasa--------------------------------------------
 def sapa_user(nama):
     print(f"Halo {nama}, selamat datang!")
 
 sapa_user("maul")
 exit()
 
-#-----------------------------------------------------------------------------
+#---------------------------------Fungsi tanpa Parameter--------------------------------------------
 def tampilkan_salam():
     print("Halo, selamat datang di Python")
 
 tampilkan_salam()
 exit()
 
-#------------------------Fungsi tanpa Parameter-------------------------------
+#--------------------------------Fungsi tanpa Parameter-------------------------------
 def tampilkan_menu():
     print("======Daftar Menu=======")
     print("1. Nasi")
