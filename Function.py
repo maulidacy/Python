@@ -1,7 +1,14 @@
 # Gunakan return jika ingin menggunakan kembali hasil dari fungsi itu (misalnya disimpan, dicetak, dibandingkan, dsb).
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 
+#-----------------------------------------------------------------------------
+def sapa_user(nama):
+    print(f"Halo {nama}, selamat datang!")
 
+sapa_user("maul")
+exit()
+
+#-----------------------------------------------------------------------------
 def tampilkan_salam():
     print("Halo, selamat datang di Python")
 
