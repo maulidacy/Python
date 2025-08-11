@@ -2,6 +2,13 @@
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 
 #-----------------------------------------------------------------------------
+def hitung_persegi(sisi):
+    return sisi*sisi
+
+print(hitung_persegi(5))
+exit()
+
+#-----------------------------------------------------------------------------
 def sapa_user(nama):
     print(f"Halo {nama}, selamat datang!")
 
