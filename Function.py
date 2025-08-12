@@ -2,6 +2,7 @@
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 
 #---------------------------------Kasir Sederhana------------------------------------
+
 def sapa_pembeli(nama="Pembeli"):
     print(f"Halo {nama}, selamat datang di Warung Python!")
 
@@ -10,31 +11,59 @@ sapa_pembeli(input("Halo, siapa nama Anda? "))
 
 def tampilkan_menu():
     print("\n======Daftar Menu=======")
-    print("1. Nasi - Rp. 4000")
-    print("2. Ayam - Rp. 5000")
+    print("1. Nasi Goreng - Rp. 15000")
+    print("2. Mie Ayam - Rp. 5000")
     print("3. Sambala sambalado - Rp. 3000")
     print("4. Telor ceplok - Rp. 3000")
     print("5. Teh pait - Rp. 3000")
     print("========================")
-tampilkan_menu()
 
-daftar_harga = [
-    ["Nasi", 4000],
-    ["Ayam", 5000],
-    ["Sambala sambalado", 3000],
-    ["Telor ceplok", 3000],
-    ["Teh pait", 3000]
-]
+
+# Daftar menu
+menu_makanan = ["Nasi Goreng", "Mie Ayam", "Sambala Sambalado", "Telor Ceplok", "Teh pait"]
+harga_makanan = [15000, 12000, 4000, 3000, 3000]
+
+# List untuk menyimpan harga pesanan
+pesanan_harga = []
+
+def jumlah():
+    jumlah_dibeli = int(input("Jumlah = "))
+    return jumlah_dibeli
 
 while True:
     tampilkan_menu()
     try:
-        pilihan = int(input("Pilih menu: "))
+        pilihan = int(input("Pilih menu (tekan 0 untuk keluar): "))
     except ValueError:
         print("Masukkan angka antara 1 sampai 5!")
         continue
 
     if pilihan == 1:
+        print(f"{menu_makanan[0]} - Rp. 4000")
+        jumlah()
+    elif pilihan == 2:
+        print(f"{menu_makanan[1]} - Rp. 5000")
+        jumlah()
+    elif pilihan == 3:
+        print(f"{menu_makanan[2]} - Rp. 3000")
+        jumlah()
+    elif pilihan == 4:
+        print(f"{menu_makanan[3]} - Rp. 3000")
+        jumlah()
+    elif pilihan == 5:
+        print(f"{menu_makanan[4]} - Rp. 3000")
+        jumlah()
+    elif pilihan == 0:
+        break
+    else:
+        print("Pilihan tidak valid!")
+
+
+keranjang = []
+keranjang.append(menu_makanan[pilihan]) #setiap kali user pilih barang
+print(keranjang)
+
+
         
 
 
