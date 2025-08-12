@@ -2,11 +2,14 @@
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 
 #---------------------------------Kasir Sederhana------------------------------------
-nama = input("Halo, siapa nama Anda?: ")
-print(f"Halo {nama}, selamat datang di Warung Python!")
+def sapa_pembeli(nama="Pembeli"):
+    print(f"Halo {nama}, selamat datang di Warung Python!")
+
+sapa_pembeli(input("Halo, siapa nama Anda? "))
+
 
 def tampilkan_menu():
-    print("======Daftar Menu=======")
+    print("\n======Daftar Menu=======")
     print("1. Nasi - Rp. 4000")
     print("2. Ayam - Rp. 5000")
     print("3. Sambala sambalado - Rp. 3000")
@@ -23,11 +26,22 @@ daftar_harga = [
     ["Teh pait", 3000]
 ]
 
-try:
-    pilih_menu = int(input("Ketik angka untuk memilih menu (Ketik 0 untuk berhenti: "))
-except ValueError:
-    print("Enter the number!")
-    
+while True:
+    tampilkan_menu()
+    try:
+        pilihan = int(input("Pilih menu: "))
+    except ValueError:
+        print("Masukkan angka antara 1 sampai 5!")
+        continue
+
+    if pilihan == 1:
+        
+
+
+exit()
+
+
+
 
 #--------------------------------- Fungsi Mengolah List--------------------------------------
 def hitung_rata(nilai_list):
