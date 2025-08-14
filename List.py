@@ -5,6 +5,9 @@ total_nilai = 0
 for i in daftar_nilai:
     total_nilai += i
 
+# Total nilai siswa bisa didapatkan dengan sum()
+# total_nilai = sum(daftar_nilai)
+
 # Jumlah item dalam list bisa didapatkan dengan len()
 jumlah_nilai = len(daftar_nilai) 
 rata_rata = total_nilai / jumlah_nilai
