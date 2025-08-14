@@ -1,3 +1,19 @@
+#------------------------Hitung rata-rata nilai dari sekelompok siswa------------------------
+daftar_nilai = [85, 90, 78, 92, 88]
+total_nilai = 0
+
+for i in daftar_nilai:
+    total_nilai += i
+
+# Jumlah item dalam list bisa didapatkan dengan len()
+jumlah_nilai = len(daftar_nilai) 
+rata_rata = total_nilai / jumlah_nilai
+
+# Output hasil
+print("Total nilai siswa:", total_nilai)
+print("Rata-rata nilai siswa:", rata_rata)
+exit()
+
 #------------------------Jumlahkan Semua Angka Genap------------------------
 angka = [3, 6, 9, 12, 15, 18]
 angka_genap = []
