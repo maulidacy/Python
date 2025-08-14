@@ -1,3 +1,14 @@
+#-------------------------------------Klasifikasi Suhu--------------------------------------
+suhu = 25
+
+if suhu < 15:
+    print("Dingin")
+elif suhu < 25:  # Kondisi ini akan dieksekusi jika suhu antara 15 dan 24
+    print("Normal")
+else:  # Kondisi ini akan dieksekusi jika suhu 25 atau lebih
+    print("Panas")
+exit()
+
 #----------------------------------------------------------------------
 nilai = float(input("Masukkan nilai ujian: "))
 
