@@ -1,6 +1,22 @@
 # Gunakan return jika ingin menggunakan kembali hasil dari fungsi itu (misalnya disimpan, dicetak, dibandingkan, dsb).
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 
+#--------------------------------- Cek Ganjil Genap --------------------------------------------
+# Fungsi untuk mengecek apakah angka genap atau ganjil
+def cek_ganjil_genap(angka):
+    if angka % 2 == 0:
+        return "Angka genap"
+    else:
+        return "Angka ganjil"
+    
+try:
+    angka = int(input("Masukkan angka: "))
+    print(cek_ganjil_genap(angka))
+except ValueError:
+    print("Input tidak valid! Harap masukkan angka.")
+    exit()
+
+#-------------------------------------------------------------------------------------------------
 angka = [1, 2, 3, 4, 5]
 
 def hitung_rata_rata(angka):
