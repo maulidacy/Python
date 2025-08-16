@@ -1,6 +1,15 @@
 # Gunakan return jika ingin menggunakan kembali hasil dari fungsi itu (misalnya disimpan, dicetak, dibandingkan, dsb).
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 
+angka = [1, 2, 3, 4, 5]
+
+def hitung_rata_rata(angka):
+    hasil = sum(angka)/len(angka)
+    return hasil
+
+print("Rata-rata:", hitung_rata_rata(angka))
+exit()
+
 #---------------------------------Kasir Sederhana (Revisi Bro)------------------------------------
 '''Kerangka Program Kasir Sederhana
 1. Definisikan daftar menu dan harga
