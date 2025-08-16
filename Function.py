@@ -1,5 +1,6 @@
 # Gunakan return jika ingin menggunakan kembali hasil dari fungsi itu (misalnya disimpan, dicetak, dibandingkan, dsb).
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
+# print() hanya menampilkan sesuatu di layar, sementara return benar-benar memberikan nilai dari fungsi tersebut untuk digunakan di bagian lain dari program
 
 #--------------------------------- Cek Ganjil Genap --------------------------------------------
 # Fungsi untuk mengecek apakah angka genap atau ganjil
