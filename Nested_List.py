@@ -1,3 +1,33 @@
+#-----------------------------------------------------------------------------------------------
+# Membuat nested list untuk data siswa
+data_siswa = [
+    ["Budi", 85, 90],
+    ["Siti", 92, 88],
+    ["Andi", 78, 85]
+]
+
+# Mengakses data
+# Mengakses baris pertama (siswa pertama)
+siswa_pertama = data_siswa[0]
+print(f"Data siswa pertama: {siswa_pertama}")
+
+# Mengakses nama siswa pertama
+nama_siswa_pertama = data_siswa[0][0]
+print(f"Nama siswa pertama: {nama_siswa_pertama}")
+
+# Mengakses nilai matematika siswa kedua
+nilai_matematika_siti = data_siswa[1][1]
+print(f"Nilai matematika Siti: {nilai_matematika_siti}")
+
+# Menggunakan perulangan untuk mencetak semua data
+print("\n--- Daftar Nilai Siswa ---")
+for siswa in data_siswa:
+    nama = siswa[0]
+    nilai_mat = siswa[1]
+    nilai_fis = siswa[2]
+    print(f"Nama: {nama}, Nilai Mat: {nilai_mat}, Nilai Fis: {nilai_fis}")
+exit()
+
 #--------------------------------------Manajemen Stok Barang----------------------------------------
 stok_barang = [
     ["Sepatu", 10, 500000],

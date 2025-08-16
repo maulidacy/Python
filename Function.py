@@ -2,6 +2,7 @@
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 # print() hanya menampilkan sesuatu di layar, sementara return benar-benar memberikan nilai dari fungsi tersebut untuk digunakan di bagian lain dari program
 
+
 #--------------------------------- Cek Ganjil Genap --------------------------------------------
 # Fungsi untuk mengecek apakah angka genap atau ganjil
 def cek_ganjil_genap(angka):
