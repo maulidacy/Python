@@ -1,3 +1,18 @@
+angka_rahasia = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+sudah_benar = False
+tebakan = []
+
+for i in angka_rahasia:
+    tebakan = int(input("Masukan angka tebakan anda: "))
+    if tebakan < 1 or tebakan > 10:
+        print("Tebakan terlalu besar!")
+    elif tebakan < 1:
+        print("Tebakan terlalu kecil!") 
+    elif tebakan == angka_rahasia:
+        print("Selamat! Tebakan anda benar!")
+    sudah_benar = True
+    break
+exit()
 #------------------------Hitung rata-rata nilai dari sekelompok siswa------------------------
 daftar_nilai = [85, 90, 78, 92, 88]
 total_nilai = 0

@@ -2,6 +2,24 @@
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 # print() hanya menampilkan sesuatu di layar, sementara return benar-benar memberikan nilai dari fungsi tersebut untuk digunakan di bagian lain dari program
 
+#------------------------- Hitung Jumlah Huruf Vokal -------------------------
+huruf_vokal = "aiueo"
+jumlah_huruf = 0
+
+def hitung_huruf_vokal(kalimat):
+    global jumlah_huruf  # Menggunakan variabel global untuk menyimpan jumlah huruf vokal
+    for huruf in kalimat.lower():  # Menggunakan lower() untuk mengabaikan huruf kapital
+        if huruf in huruf_vokal:
+            jumlah_huruf += 1
+    return jumlah_huruf
+
+try:
+    kalimat = input("Masukkan kalimat: ")
+except EOFError:
+    print("Tidak ada input yang diberikan.")
+    exit()
+print(f"Jumlah huruf vokal dalam kalimat: {hitung_huruf_vokal(kalimat)}")
+exit()
 
 #--------------------------------- Cek Ganjil Genap --------------------------------------------
 # Fungsi untuk mengecek apakah angka genap atau ganjil
