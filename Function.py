@@ -1,6 +1,24 @@
 # Gunakan return jika ingin menggunakan kembali hasil dari fungsi itu (misalnya disimpan, dicetak, dibandingkan, dsb).
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 # print() hanya menampilkan sesuatu di layar, sementara return benar-benar memberikan nilai dari fungsi tersebut untuk digunakan di bagian lain dari program
+# def sapa(nama): # nama = parameter (tempat masuknya data ke fungsi)
+# sapa("Budi")  # Budi = argumen (nilai yang dikirim saat fungsi dipanggil)
+
+#------------------------- Cek Ganjil Genap -------------------------
+def ganjil_genap(angka):
+    """Fungsi untuk mengecek apakah angka ganjil atau genap"""
+    if angka % 2 == 0:
+        print("Genap")
+    else:
+        print("Ganjil")
+
+try:
+    angka = int(input("Masukkan angka: "))
+    ganjil_genap(angka)
+except ValueError:
+    print("Input harus berupa angka")
+
+exit()
 
 #------------------------- Hitung Jumlah Huruf Vokal -------------------------
 huruf_vokal = "aiueo"
