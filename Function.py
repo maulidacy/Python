@@ -4,6 +4,25 @@
 # def sapa(nama): # nama = parameter (tempat masuknya data ke fungsi)
 # sapa("Budi")  # Budi = argumen (nilai yang dikirim saat fungsi dipanggil)
 
+kumpulan_nilai = []
+
+def hitung_rata_rata(nilai_list):
+    """Fungsi untuk menghitung rata-rata dari daftar nilai"""
+    if not nilai_list:  # Cek jika daftar kosong
+        return 0
+    return sum(nilai_list) / len(nilai_list)
+
+while True:
+    try:
+        nilai = float(input("Masukkan nilai (ketik Y/y untuk keluar): "))
+        kumpulan_nilai.append(nilai)  # Menambahkan nilai ke daftar
+        if nilai == 'Y' or nilai == 'y':
+            print(f"Rata-rata nilai: {hitung_rata_rata(kumpulan_nilai)}")
+            break
+    except ValueError:
+        print("Input tidak valid! Harap masukkan angka.")
+        exit()
+
 #--------------------------- Konversi Suhu ---------------------------
 def konversi_fahrenheit(suhu):
     """Fungsi untuk mengonversi suhu dari Celcius ke Fahrenheit"""
