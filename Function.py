@@ -4,6 +4,27 @@
 # def sapa(nama): # nama = parameter (tempat masuknya data ke fungsi)
 # sapa("Budi")  # Budi = argumen (nilai yang dikirim saat fungsi dipanggil)
 
+#--------------------------- Konversi Suhu ---------------------------
+def konversi_fahrenheit(suhu):
+    """Fungsi untuk mengonversi suhu dari Celcius ke Fahrenheit"""
+    fahrenheit = (suhu * 9/5) + 32 
+    return fahrenheit
+def konversi_kelvin(suhu):
+    """Fungsi untuk mengonversi suhu dari Celcius ke Kelvin"""
+    kelvin = suhu + 273.15
+    return kelvin
+
+try:
+    suhu = float(input("Masukkan suhu dalam Celcius: "))
+    fahrenheit = konversi_fahrenheit(suhu)
+    kelvin = konversi_kelvin(suhu)
+    print(f"Dalam Fahrenheit: {fahrenheit}")
+    print(f"Dalam Kelvin: {kelvin}")
+except ValueError:
+    print("Input tidak valid! Harap masukkan angka.")
+    exit()
+exit()
+
 #------------------------- Cek Ganjil Genap -------------------------
 def ganjil_genap(angka):
     """Fungsi untuk mengecek apakah angka ganjil atau genap"""
