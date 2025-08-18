@@ -16,10 +16,10 @@ def konversi_kelvin(suhu):
 
 try:
     suhu = float(input("Masukkan suhu dalam Celcius: "))
-    fahrenheit = konversi_fahrenheit(suhu)
-    kelvin = konversi_kelvin(suhu)
-    print(f"Dalam Fahrenheit: {fahrenheit}")
-    print(f"Dalam Kelvin: {kelvin}")
+    # fahrenheit = konversi_fahrenheit(suhu) # gini juga bisa, tapi lebih rapi kalau langsung di print
+    # kelvin = konversi_kelvin(suhu)
+    print(f"Dalam Fahrenheit: {konversi_fahrenheit(suhu)}") # lebih rapi
+    print(f"Dalam Kelvin: {konversi_kelvin(suhu)}")
 except ValueError:
     print("Input tidak valid! Harap masukkan angka.")
     exit()
