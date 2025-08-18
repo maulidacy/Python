@@ -1,16 +1,16 @@
 # Gunakan return jika ingin menggunakan kembali hasil dari fungsi itu (misalnya disimpan, dicetak, dibandingkan, dsb).
 # Gunakan print() jika hanya ingin menampilkan sesuatu, tapi tidak perlu hasilnya.
 # print() hanya menampilkan sesuatu di layar, sementara return benar-benar memberikan nilai dari fungsi tersebut untuk digunakan di bagian lain dari program
-# def sapa(nama): # nama = parameter (tempat masuknya data ke fungsi)
+# def sapa(nama): # nama = parameter (tempat masuknya data ke fungsi) atau kotak kosong di fungsi
 # sapa("Budi")  # Budi = argumen (nilai yang dikirim saat fungsi dipanggil)
 
 kumpulan_nilai = []
 
-def hitung_rata_rata(nilai_list):
+def hitung_rata_rata(kumpulan_nilai):
     """Fungsi untuk menghitung rata-rata dari daftar nilai"""
-    if not nilai_list:  # Cek jika daftar kosong
+    if not kumpulan_nilai:  # Cek jika daftar kosong
         return 0
-    return sum(nilai_list) / len(nilai_list)
+    return sum(kumpulan_nilai) / len(kumpulan_nilai)
 
 while True:
     try:
