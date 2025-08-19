@@ -4,6 +4,30 @@
 # def sapa(nama): # nama = parameter (tempat masuknya data ke fungsi) atau kotak kosong di fungsi
 # sapa("Budi")  # Budi = argumen (nilai yang dikirim saat fungsi dipanggil)
 
+#--------------------------- Hitung Jumlah Kata, menampikan kata terpanjang ---------------------------
+# Program untuk menghitung jumlah kata dalam kalimat yang dimasukkan oleh pengguna
+def hitung_jumlah_kata(kata):
+    """Fungsi untuk menghitung jumlah kata dalam kalimat"""
+    if not kata:  # Cek jika kata kosong
+        return 0
+    return len(kata.split())  # Menghitung jumlah kata dengan memisahkan berdasarkan spasi
+
+def kata_terpanjang(kata):
+    """Fungsi untuk menemukan kata terpanjang dalam kalimat"""
+    if not kata:  # Cek jika kata kosong
+        return ""
+    kata_list = kata.split()  # Memisahkan kalimat menjadi daftar kata
+    return max(kata_list, key=len)  # Mengembalikan kata terpanjang
+
+try:
+    kalimat = input("Masukkan kalimat: ")
+except:
+    print("Input tidak valid! Harap masukkan kalimat.")
+    exit()
+
+print(f"Jumlah kata dalam kalimat: {hitung_jumlah_kata(kalimat)}")
+print(f"Kata terpanjang dalam kalimat: {kata_terpanjang(kalimat)}")
+exit()
 
 #--------------------------- Hitung Rata-Rata ---------------------------
 # Program untuk menghitung rata-rata dari daftar nilai yang dimasukkan oleh pengguna
