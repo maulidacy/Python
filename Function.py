@@ -4,6 +4,7 @@
 # def sapa(nama): # nama = parameter (tempat masuknya data ke fungsi) atau kotak kosong di fungsi
 # sapa("Budi")  # Budi = argumen (nilai yang dikirim saat fungsi dipanggil)
 
+
 #--------------------------- Hitung Rata-Rata ---------------------------
 # Program untuk menghitung rata-rata dari daftar nilai yang dimasukkan oleh pengguna
 kumpulan_nilai = []
@@ -16,7 +17,7 @@ def hitung_rata_rata(kumpulan_nilai):
 
 while True:
     nilai_input = input("Masukkan nilai (ketik Y/y untuk keluar): ")
-    
+
      # cek dulu kalau user mau keluar
     if nilai_input.lower() == 'y':
         print(f"Rata-rata nilai: {hitung_rata_rata(kumpulan_nilai)}")
