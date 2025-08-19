@@ -4,6 +4,18 @@
 # def sapa(nama): # nama = parameter (tempat masuknya data ke fungsi) atau kotak kosong di fungsi
 # sapa("Budi")  # Budi = argumen (nilai yang dikirim saat fungsi dipanggil)
 
+#=--------------------------- Key=len pada max() ---------------------------
+# Program untuk menunjukkan penggunaan
+kalimat = "saya suka belajar python"
+kata_list = kalimat.split()
+
+"""Kalau tidak pakai key=len, maka fungsi max() akan mencari kata “terbesar” 
+berdasarkan urutan alfabet (lexicographical order), bukan berdasarkan panjangnya"""
+
+print("Tanpa key=len:", max(kata_list))  
+print("Dengan key=len:", max(kata_list, key=len))
+exit()
+
 #--------------------------- Hitung Jumlah Kata, menampikan kata terpanjang ---------------------------
 # Program untuk menghitung jumlah kata dalam kalimat yang dimasukkan oleh pengguna
 def hitung_jumlah_kata(kata):
