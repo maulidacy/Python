@@ -19,11 +19,7 @@ def kata_terpanjang(kata):
     kata_list = kata.split()  # Memisahkan kalimat menjadi daftar kata
     return max(kata_list, key=len)  # Mengembalikan kata terpanjang
 
-try:
-    kalimat = input("Masukkan kalimat: ")
-except:
-    print("Input tidak valid! Harap masukkan kalimat.")
-    exit()
+kalimat = input("Masukkan kalimat: ")
 
 print(f"Jumlah kata dalam kalimat: {hitung_jumlah_kata(kalimat)}")
 print(f"Kata terpanjang dalam kalimat: {kata_terpanjang(kalimat)}")
