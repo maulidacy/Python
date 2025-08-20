@@ -5,7 +5,13 @@
 # sapa("Budi")  # Budi = argumen (nilai yang dikirim saat fungsi dipanggil)
 
 #----------------------------
+teks = []
+
 def clean_text(text):
+    return clean_text.lower()  # Mengubah teks menjadi huruf kecil
+
+text = input("Masukkan teks: ")
+
 
 #=--------------------------- Key=len pada max() ---------------------------
 # Program untuk menunjukkan penggunaan
