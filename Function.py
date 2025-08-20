@@ -4,6 +4,9 @@
 # def sapa(nama): # nama = parameter (tempat masuknya data ke fungsi) atau kotak kosong di fungsi
 # sapa("Budi")  # Budi = argumen (nilai yang dikirim saat fungsi dipanggil)
 
+#----------------------------
+def clean_text(text):
+
 #=--------------------------- Key=len pada max() ---------------------------
 # Program untuk menunjukkan penggunaan
 kalimat = "saya suka belajar python"
