@@ -5,6 +5,15 @@
 # sapa("Budi")  # Budi = argumen (nilai yang dikirim saat fungsi dipanggil)
 # print(dir(str)) //cek semua fungsi bawaan dari tipe data string
 
+#---------------------------- Bersihkan Teks Tanpa Result ----------------------------
+def bersihkan_teks(teks):
+    return teks.strip().lower().replace(".", "")
+
+kalimat = input("Masukkan kalimat: ")
+print("Hasil bersih:", bersihkan_teks(kalimat))
+exit()
+
+#---------------------------- Bersihkan Teks Pakai Result ----------------------------
 def bersihkan_teks(teks):
     # TODO 1: Hapus spasi di awal dan akhir
     result = teks.strip()
