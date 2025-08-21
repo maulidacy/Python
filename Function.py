@@ -3,15 +3,19 @@
 # print() hanya menampilkan sesuatu di layar, sementara return benar-benar memberikan nilai dari fungsi tersebut untuk digunakan di bagian lain dari program
 # def sapa(nama): # nama = parameter (tempat masuknya data ke fungsi) atau kotak kosong di fungsi
 # sapa("Budi")  # Budi = argumen (nilai yang dikirim saat fungsi dipanggil)
+# print(dir(str)) //cek semua fungsi bawaan dari tipe data string
 
-#----------------------------
+
+#---------------------------- Basic Data Processing ----------------------------
+# Program untuk membersihkan teks dengan menghapus spasi, tanda baca, dan mengubah ke huruf kecil
 tanda_baca = ".,?!"
 
 def clean_text(text):
-    """Fungsi untuk membersihkan teks dengan mengubahnya menjadi huruf kecil"""
-    cleaned = text.strip()  # Menghapus spasi di awal dan akhir teks
-    cleaned = cleaned.strip(tanda_baca)  # Menghapus tanda baca di awal dan akhir teks
-    return cleaned.lower()  # Mengubah teks menjadi huruf kecil
+    """Fungsi untuk membersihkan teks dengan menghapus spasi, tanda baca, dan mengubah ke huruf kecil"""
+    result = text.strip()  # Hapus spasi di awal/akhir
+    for char in tanda_baca:  # Loop semua tanda baca
+        result = result.replace(char, "")  # Ganti tanda baca dengan string kosong
+    return result.lower()  # Ubah ke huruf kecil
 
 text = input("Masukkan teks: ")
 print("Teks setelah dibersihkan:", clean_text(text))  # Menampilkan teks yang sudah diubah menjadi huruf kecil
