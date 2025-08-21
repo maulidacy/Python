@@ -5,6 +5,23 @@
 # sapa("Budi")  # Budi = argumen (nilai yang dikirim saat fungsi dipanggil)
 # print(dir(str)) //cek semua fungsi bawaan dari tipe data string
 
+def bersihkan_teks(teks):
+    # TODO 1: Hapus spasi di awal dan akhir
+    result = teks.strip()
+
+    # TODO 2: Ubah ke huruf kecil
+    result = teks.lower()  
+
+    # TODO 3: Hapus tanda titik (.)
+    result = teks.replace(".", "")
+
+    # TODO 4: Kembalikan hasilnya
+    return result
+
+# Input dari user
+kalimat = input("Masukkan kalimat: ")
+print("Hasil bersih:", bersihkan_teks(kalimat))
+exit()
 
 #---------------------------- Basic Data Processing ----------------------------
 # Program untuk membersihkan teks dengan menghapus spasi, tanda baca, dan mengubah ke huruf kecil
