@@ -5,11 +5,13 @@
 # sapa("Budi")  # Budi = argumen (nilai yang dikirim saat fungsi dipanggil)
 
 #----------------------------
+tanda_baca = ".,?!"
 
 def clean_text(text):
     """Fungsi untuk membersihkan teks dengan mengubahnya menjadi huruf kecil"""
-    clean_text = text.strip()  # Menghapus spasi di awal dan akhir teks
-    return clean_text.lower()  # Mengubah teks menjadi huruf kecil
+    cleaned = text.strip()  # Menghapus spasi di awal dan akhir teks
+    cleaned = cleaned.strip(tanda_baca)  # Menghapus tanda baca di awal dan akhir teks
+    return cleaned.lower()  # Mengubah teks menjadi huruf kecil
 
 text = input("Masukkan teks: ")
 print("Teks setelah dibersihkan:", clean_text(text))  # Menampilkan teks yang sudah diubah menjadi huruf kecil
