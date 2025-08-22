@@ -4,6 +4,30 @@
 # Nilai dari key bisa berupa tipe data apa saja, termasuk string, integer, list, atau bahkan dictionary itu sendiri.
 # Untuk mengakses nilai, kita menggunakan key yang sesuai.
 
+#-----------------------------------------------------------------------------------------------------------
+nilai = {
+    "Matematika": 85,
+    "Pemrograman": 90,
+    "AI": 88
+}
+
+# menambah data
+nilai["Basis Data"] = 92
+print(nilai)
+
+# nilai tertinggi
+nilai_tertinggi = max(nilai, key=nilai.get)  # Mengambil
+print(f"Nilai tertinggi: {nilai_tertinggi} dengan nilai {nilai[nilai_tertinggi]}")
+
+#mengakses nilai key
+for key in nilai.keys():
+    print("key: ", key)
+
+# mengakses nilai value
+for value in nilai.values():
+    print("value: ", value)
+exit()
+
 # ----------------------------------------------------------------------------------------------------------------
 mahasiswa = {
     "nama": "Maul",
