@@ -16,8 +16,12 @@ nilai["Basis Data"] = 92
 print(nilai)
 
 # nilai tertinggi
-nilai_tertinggi = max(nilai, key=nilai.get)  # Mengambil
-print(f"Nilai tertinggi: {nilai_tertinggi} dengan nilai {nilai[nilai_tertinggi]}")
+nilai_tertinggi = max(nilai, key=nilai.get)  # mendapatkan key tertinggi berdasarkan angka
+
+"""key=nilai.get artinya:
+Jangan bandingkan key-nya langsung, tapi ambil dulu value dari dictionary."""
+
+print(f"Nilai tertinggi: {nilai_tertinggi} dengan nilai {nilai[nilai_tertinggi]}") # Ambil value dengan indexing [nilai_tertinggi]
 
 #mengakses nilai key
 for key in nilai.keys():
