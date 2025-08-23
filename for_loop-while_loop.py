@@ -1,3 +1,5 @@
+# In coding and business
+
 #---------------------------------------------------------------------------------------------
 teks = "AI itu seru banget"
 for huruf in teks.split():
