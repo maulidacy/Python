@@ -11,7 +11,7 @@ nilai_siswa = {
     "Kur": 89
 }
 
-for nama, nilai in nilai_siswa.items():
+for nama, nilai in nilai_siswa.items(): # pakai .items(), Python akan memberikan pasangan (key, value) dalam bentuk tuple.
     print(f"Nama: {nama}, Nilai: {nilai}")
 exit() 
 
