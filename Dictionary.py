@@ -4,6 +4,7 @@
 # Nilai dari key bisa berupa tipe data apa saja, termasuk string, integer, list, atau bahkan dictionary itu sendiri.
 # Untuk mengakses nilai, kita menggunakan key yang sesuai.
 
+
 #-----------------------------------------------------------------------------------------------------------
 nilai = {
     "Matematika": 85,

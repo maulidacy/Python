@@ -5,6 +5,49 @@
 # sapa("Budi")  # Budi = argumen (nilai yang dikirim saat fungsi dipanggil)
 # print(dir(str)) //cek semua fungsi bawaan dari tipe data string
 
+#---------------------------- Analisis Sentimen Sederhana ----------------------------
+# Kamus sentimen sederhana
+sentiment_lexicon = {
+    "senang": 1,
+    "bahagia": 1,
+    "sedih": -1,
+    "marah": -1,
+    "biasa": 0
+}
+
+
+def analisis_sentimen(teks):
+    teks = teks.split() # Pisahkan kalimat menjadi kata-kata
+    total = 0
+    # Periksa setiap kata apakah ada di kamus sentimen
+    result = {}
+    for kata in teks:
+        if kata in sentiment_lexicon:
+            result[kata] = True
+        else:
+            result[kata] = False
+    return total, result
+
+# Input kalimat
+kalimat = input("Masukkan kalimat: ")
+
+# Hitung hasil
+total, hasil = analisis_sentimen(kalimat)
+
+# Tentukan label sentimen
+if total == 0:
+    print("Netral")
+elif total > 0:
+    print("Positif")
+else:
+    print("Negatif")
+
+# Menampilkan hasil kata
+for kata, ada_di_lexicon in hasil.items():
+    print(f"Kata: '{kata}' - Ada di lexicon: {ada_di_lexicon}")
+exit()
+
+
 #---------------------------- Bersihkan Teks Tanpa Result ----------------------------
 def bersihkan_teks(teks):
     return teks.strip().lower().replace(".", "")
