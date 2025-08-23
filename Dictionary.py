@@ -4,7 +4,18 @@
 # Nilai dari key bisa berupa tipe data apa saja, termasuk string, integer, list, atau bahkan dictionary itu sendiri.
 # Untuk mengakses nilai, kita menggunakan key yang sesuai.
 
-#-----------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------
+nilai_siswa = {
+    "Maul": 99,
+    "Cahya": 88,
+    "Kur": 89
+}
+
+for nama, nilai in nilai_siswa.items():
+    print(f"Nama: {nama}, Nilai: {nilai}")
+exit() 
+
+# -------------------------------------------------------------------------------------------------
 hewan = {
     "kucing":"meong",
     "anjing":"guk",
