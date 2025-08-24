@@ -23,6 +23,9 @@ print("Hasil hitung kata:", hitung_kata)
 # Cari kata yang paling sering muncul
 kata_terbanyak = max(hitung_kata, key=hitung_kata.get) # max() dengan key=hitungan.get untuk cari kata dengan nilai tertinggi
 print(f"Kata yang paling sering muncul: '{kata_terbanyak}' sebanyak {hitung_kata[kata_terbanyak]} kali")
+
+# menampilkan kata terbanyak saja
+print(kata_terbanyak)
 exit()
 
 #-------------------------------------------------------------------------------------------------
