@@ -8,14 +8,15 @@
 # Input teks
 teks = "saya suka makan nasi dan saya suka belajar python"
 
-# Hitung jumlah tiap kata
+# Dictionary kosong untuk menampung hasil hitung
 hitung_kata = {}
 
-for kata in teks.split():
+# Loop setiap kata dalam teks
+for kata in teks.split(): # .split() memecah teks jadi list kata
     if kata in hitung_kata:
-        hitung_kata[kata] += 1
+        hitung_kata[kata] += 1 # kalau kata sudah ada, jumlahnya ditambah 1
     else:
-        hitung_kata[kata] = 1
+        hitung_kata[kata] = 1 # kalau kata belum ada, dibuat dengan nilai 1
 
 print(hitung_kata)
 exit()
