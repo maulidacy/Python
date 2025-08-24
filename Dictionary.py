@@ -4,7 +4,21 @@
 # Nilai dari key bisa berupa tipe data apa saja, termasuk string, integer, list, atau bahkan dictionary itu sendiri.
 # Untuk mengakses nilai, kita menggunakan key yang sesuai.
 
+#----------------------------------------------menghitung berapa kali setiap kata muncul di dalam sebuah teks------------------------------------------------
+# Input teks
+teks = "saya suka makan nasi dan saya suka belajar python"
 
+# Hitung jumlah tiap kata
+hitung_kata = {}
+
+for kata in teks.split():
+    if kata in hitung_kata:
+        hitung_kata[kata] += 1
+    else:
+        hitung_kata[kata] = 1
+
+print(hitung_kata)
+exit()
 
 #-------------------------------------------------------------------------------------------------
 nilai_siswa = {
