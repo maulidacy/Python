@@ -18,7 +18,11 @@ for kata in teks.split(): # .split() memecah teks jadi list kata
     else:
         hitung_kata[kata] = 1 # kalau kata belum ada, dibuat dengan nilai 1
 
-print(hitung_kata)
+print("Hasil hitung kata:", hitung_kata)
+
+# Cari kata yang paling sering muncul
+kata_terbanyak = max(hitung_kata, key=hitung_kata.get) # max() dengan key=hitungan.get untuk cari kata dengan nilai tertinggi
+print(f"Kata yang paling sering muncul: '{kata_terbanyak}' sebanyak {hitung_kata[kata_terbanyak]} kali")
 exit()
 
 #-------------------------------------------------------------------------------------------------
