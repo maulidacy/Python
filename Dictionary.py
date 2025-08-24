@@ -26,6 +26,17 @@ print(f"Kata yang paling sering muncul: '{kata_terbanyak}' sebanyak {hitung_kata
 
 # menampilkan kata terbanyak saja
 print(kata_terbanyak)
+
+# Cari 3 kata teratas yang paling sering muncul
+"""sorted(..., key=lambda item: item[1], reverse=True)
+sorted() digunakan untuk mengurutkan.
+key=lambda item: item[1] artinya urutkan berdasarkan angka (frekuensi), bukan kata.
+item[0] = kata
+item[1] = jumlah kemunculan
+reverse=True → supaya urut dari besar ke kecil."""
+
+top_3_kata = sorted(hitung_kata.items(), key=lambda item: item[1], reverse=True)[:3] # sorted() dengan key=lambda untuk mengurutkan berdasarkan nilai
+print("3 kata teratas yang paling sering muncul:", top_3_kata)
 exit()
 
 #-------------------------------------------------------------------------------------------------
